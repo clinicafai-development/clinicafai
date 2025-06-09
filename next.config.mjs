@@ -8,6 +8,17 @@ const nextConfig = {
   async rewrites() {
     return [];
   },
+  // Configure external image domains
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'jnksxvamrbsxfahkbxgi.supabase.co',
+        port: '',
+        pathname: '/storage/v1/object/public/**',
+      },
+    ],
+  },
 };
 
 export default nextConfig;

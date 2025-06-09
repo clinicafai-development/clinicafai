@@ -835,58 +835,71 @@
   \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 @charset "UTF-8";
 /*--------------------------------------------------------------
-## All Color Variable - Luxurious Black & Gold Theme
+## All Color Variable - Elegant Golden-Yellow + Black Theme
 ----------------------------------------------------------------*/
 :root {
   /* ========================================
      🎨 Primary Color Palette
      ======================================== */
-  --primary-accent: #d4af37; /* Royal Gold - Main brand accent */
-  --deep-black: #000000; /* Deep Black - Primary background */
-  --heading-color: #ffffff; /* Pure White - Headings and titles */
-  --body-color: #d1cfcf; /* Light Gray - Body text */
+  --primary-accent: #D4AF7F; /* Soft Gold - Main brand accent */
+  --secondary-accent: #E3C16F; /* Muted Honey - Lighter gold accent */
+  --deep-black: #1A1A1A; /* Matte Black - Primary background */
+  /* Context-Aware Text Colors */
+  --heading-color-dark: #FCF7F0; /* Ivory Cream headings on dark backgrounds */
+  --heading-color-light: #1A1A1A; /* Matte Black headings on light backgrounds */
+  --body-color-dark: #E8DCC2; /* Warm Sand body text on dark backgrounds */
+  --body-color-light: #3E3E3E; /* Charcoal Gray body text on light backgrounds */
+  /* Default text colors (for dark backgrounds) */
+  --heading-color: var(--heading-color-dark);
+  --body-color: var(--body-color-dark);
   /* ========================================
      🎨 Neutral Colors
      ======================================== */
   --white: #ffffff; /* Pure White */
   --black: #000000; /* Pure Black */
-  --dark-gray: #1a1a1a; /* Dark section backgrounds */
-  --light-gray: #2a2a2a; /* Card backgrounds on dark mode */
-  --border-gold: #bfa24d; /* Subtle border color */
+  --matte-black: #1A1A1A; /* Matte Black - Main dark color */
+  --charcoal-gray: #3E3E3E; /* Charcoal Gray - Secondary dark */
+  --ivory-cream: #FCF7F0; /* Ivory Cream - Main light color */
+  --warm-sand: #E8DCC2; /* Warm Sand - Secondary light */
+  --rose-beige: #F3E6DC; /* Rose Beige - Accent light */
   /* ========================================
      🌈 Extended Color Palette
      ======================================== */
   /* Gold Variations */
-  --light-gold: #f5e7b4; /* Highlights and badges */
-  --medium-gold: #cfa93f; /* Active elements and hover states */
-  --soft-gold-bg: #fdf7e4; /* Light section backgrounds */
-  --gradient-gold-start: #d4af37; /* Gradient start */
-  --gradient-gold-end: #b58e1f; /* Gradient end */
+  --soft-gold: #D4AF7F; /* Primary gold tone */
+  --muted-honey: #E3C16F; /* Secondary gold tone */
+  --light-gold: #F0E4C1; /* Very light gold for highlights */
+  --dark-gold: #B8956B; /* Darker gold for hover states */
   /* Background Variations */
-  --dark-black-bg: #0a0a0a; /* Section background for dark areas */
-  --deep-charcoal: #121212; /* Alternate dark backgrounds */
-  --soft-white-bg: #fafafa; /* Card/tabbed backgrounds in light mode */
-  --card-background: #1e1e1e; /* Cards and interactive components */
+  --dark-black-bg: #0f0f0f; /* Section background for dark areas */
+  --light-cream-bg: #FCF7F0; /* Light section backgrounds */
+  --soft-sand-bg: #F5F0E8; /* Alternative light background */
+  --card-background: #2a2a2a; /* Cards and interactive components */
+  --border-gold: #D4AF7F; /* Golden borders */
+  --border-light: #E8DCC2; /* Light borders */
+  --light-border: #E8DCC2; /* Legacy alias for border-light */
   /* Accent Colors */
-  --warning-highlight: #ffd700; /* Bright gold for notifications */
-  --error-alert: #ff4c4c; /* Red for alerts and errors */
-  --light-border: #333333; /* Dividers and form inputs */
+  --warning-highlight: #E3C16F; /* Muted honey for notifications */
+  --error-alert: #D4544F; /* Soft red for alerts */
+  --success-color: #7FAF7F; /* Soft green for success states */
   /* ========================================
      🔧 Usage Patterns
      ======================================== */
   /* Transparency & Overlays */
-  --dark-overlay: rgba(0, 0, 0, 0.7);
-  --gold-overlay: rgba(212, 175, 55, 0.1);
-  --white-transparency: rgba(255, 255, 255, 0.85);
-  --shadow-color: rgba(255, 215, 0, 0.15);
+  --dark-overlay: rgba(26, 26, 26, 0.8);
+  --gold-overlay: rgba(212, 175, 127, 0.1);
+  --light-overlay: rgba(252, 247, 240, 0.9);
+  --shadow-color: rgba(212, 175, 127, 0.25);
   /* Gradients */
-  --primary-gradient: linear-gradient(142deg, #000000 -8.12%, #d4af37 108.12%);
+  --primary-gradient: linear-gradient(142deg, #1A1A1A -8.12%, #D4AF7F 108.12%);
+  --gold-gradient: linear-gradient(135deg, #D4AF7F 0%, #E3C16F 100%);
+  --cream-gradient: linear-gradient(135deg, #FCF7F0 0%, #F3E6DC 100%);
   /* ========================================
      📊 Legacy Variable Mapping
      ======================================== */
-  --accent-color: var(--primary-accent); /* Map old accent to gold */
-  --blue-color: var(--deep-black); /* Replace blue with black */
-  --gray-color: var(--light-gray); /* Update gray */
+  --accent-color: var(--primary-accent); /* Map old accent to soft gold */
+  --blue-color: var(--deep-black); /* Replace blue with matte black */
+  --gray-color: var(--charcoal-gray); /* Update gray */
   --border-color: var(--border-gold); /* Update border color */
   /* Typography */
   --heading-font: "Poppins", sans-serif;
@@ -2635,44 +2648,117 @@ hr {
 }
 
 /* ========================================
-   🎨 New Black & Gold Theme Utilities
+   🎨 New Golden-Yellow + Black Theme Utilities
    ======================================== */
 /* Gold Color Classes */
-.cs_gold_color {
-  color: var(--primary-accent);
+.cs_soft_gold_color {
+  color: var(--soft-gold);
+}
+
+.cs_muted_honey_color {
+  color: var(--muted-honey);
 }
 
 .cs_light_gold_color {
   color: var(--light-gold);
 }
 
-.cs_medium_gold_color {
-  color: var(--medium-gold);
+.cs_dark_gold_color {
+  color: var(--dark-gold);
+}
+
+.cs_ivory_cream_color {
+  color: var(--ivory-cream);
+}
+
+.cs_warm_sand_color {
+  color: var(--warm-sand);
+}
+
+.cs_charcoal_color {
+  color: var(--charcoal-gray);
+}
+
+/* Context-Aware Text Colors */
+.cs_text_on_light h1, .cs_text_on_light h2, .cs_text_on_light h3, .cs_text_on_light h4, .cs_text_on_light h5, .cs_text_on_light h6 {
+  color: var(--heading-color-light) !important;
+}
+.cs_text_on_light p, .cs_text_on_light span, .cs_text_on_light div, .cs_text_on_light li {
+  color: var(--body-color-light) !important;
+}
+
+.cs_text_on_dark h1, .cs_text_on_dark h2, .cs_text_on_dark h3, .cs_text_on_dark h4, .cs_text_on_dark h5, .cs_text_on_dark h6 {
+  color: var(--heading-color-dark) !important;
+}
+.cs_text_on_dark p, .cs_text_on_dark span, .cs_text_on_dark div, .cs_text_on_dark li {
+  color: var(--body-color-dark) !important;
+}
+
+/* Light Background Sections */
+.cs_light_bg_section {
+  background-color: var(--ivory-cream);
+  color: var(--body-color-light);
+}
+.cs_light_bg_section h1, .cs_light_bg_section h2, .cs_light_bg_section h3, .cs_light_bg_section h4, .cs_light_bg_section h5, .cs_light_bg_section h6 {
+  color: var(--heading-color-light);
+}
+.cs_light_bg_section p, .cs_light_bg_section span, .cs_light_bg_section div, .cs_light_bg_section li {
+  color: var(--body-color-light);
+}
+
+.cs_cream_section {
+  background-color: var(--light-cream-bg);
+  color: var(--body-color-light);
+}
+.cs_cream_section h1, .cs_cream_section h2, .cs_cream_section h3, .cs_cream_section h4, .cs_cream_section h5, .cs_cream_section h6 {
+  color: var(--heading-color-light);
+}
+.cs_cream_section p, .cs_cream_section span, .cs_cream_section div, .cs_cream_section li {
+  color: var(--body-color-light);
+}
+
+.cs_sand_section {
+  background-color: var(--soft-sand-bg);
+  color: var(--body-color-light);
+}
+.cs_sand_section h1, .cs_sand_section h2, .cs_sand_section h3, .cs_sand_section h4, .cs_sand_section h5, .cs_sand_section h6 {
+  color: var(--heading-color-light);
+}
+.cs_sand_section p, .cs_sand_section span, .cs_sand_section div, .cs_sand_section li {
+  color: var(--body-color-light);
 }
 
 /* Background Classes */
-.cs_gold_bg {
-  background-color: var(--primary-accent);
+.cs_soft_gold_bg {
+  background-color: var(--soft-gold);
 }
 
-.cs_dark_bg {
-  background-color: var(--dark-gray);
+.cs_muted_honey_bg {
+  background-color: var(--muted-honey);
 }
 
-.cs_deep_black_bg {
-  background-color: var(--deep-black);
+.cs_matte_black_bg {
+  background-color: var(--matte-black);
 }
 
 .cs_charcoal_bg {
-  background-color: var(--deep-charcoal);
+  background-color: var(--charcoal-gray);
+}
+
+.cs_ivory_cream_bg {
+  background-color: var(--ivory-cream);
+}
+
+.cs_warm_sand_bg {
+  background-color: var(--warm-sand);
+}
+
+.cs_rose_beige_bg {
+  background-color: var(--rose-beige);
 }
 
 .cs_card_bg {
   background-color: var(--card-background);
-}
-
-.cs_soft_gold_bg {
-  background-color: var(--soft-gold-bg);
 }
 
 /* Gradient Backgrounds */
@@ -2681,7 +2767,11 @@ hr {
 }
 
 .cs_gold_gradient_bg {
-  background: linear-gradient(135deg, var(--gradient-gold-start) 0%, var(--gradient-gold-end) 100%);
+  background: var(--gold-gradient);
+}
+
+.cs_cream_gradient_bg {
+  background: var(--cream-gradient);
 }
 
 /* Border Classes */
@@ -2690,7 +2780,7 @@ hr {
 }
 
 .cs_light_border {
-  border-color: var(--light-border);
+  border-color: var(--border-light);
 }
 
 /* Shadow Classes */
@@ -2700,6 +2790,10 @@ hr {
 
 .cs_gold_glow {
   box-shadow: 0 0 20px var(--shadow-color);
+}
+
+.cs_elegant_shadow {
+  box-shadow: 0 8px 30px rgba(212, 175, 127, 0.2);
 }
 
 /* Overlay Classes */
@@ -2752,58 +2846,51 @@ label {
   }
 }
 
-.cs_btn.cs_style_1 {
+.cs_btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  flex: none;
-  font-size: 17px;
+  font-family: var(--heading-font);
   font-weight: 500;
-  padding: 11px 28px;
-  line-height: 1.6em;
-  gap: 8px;
-  line-height: 1.6em;
-  border-radius: 1.6em;
-}
-.cs_btn.cs_style_1 i {
-  font-size: 15px;
-}
-.cs_btn.cs_style_1.cs_color_1 {
-  background: var(--primary-gradient);
-  color: #fff;
-  border: 2px solid transparent;
-  transition: all 0.3s ease;
-}
-.cs_btn.cs_style_1.cs_color_1:hover {
-  background: var(--deep-black);
-  border-color: var(--primary-accent);
-  box-shadow: 0 4px 15px var(--shadow-color);
-  transform: translateY(-2px);
-}
-.cs_btn.cs_style_1.cs_color_2 {
-  background-color: var(--deep-black);
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background-color: transparent;
   color: var(--primary-accent);
   border: 2px solid var(--primary-accent);
-  transition: all 0.3s ease;
+  padding: 18px 42px;
+  font-size: 16px;
+  border-radius: 50px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.4s ease;
+  gap: 10px;
 }
-.cs_btn.cs_style_1.cs_color_2:hover {
-  background: var(--primary-gradient);
-  color: #fff;
-  box-shadow: 0 4px 15px var(--shadow-color);
-  transform: translateY(-2px);
+.cs_btn::before {
+  position: absolute;
+  content: "";
+  background: var(--primary-accent);
+  width: 0%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+  transition: all 0.4s ease;
+  z-index: -1;
 }
-.cs_btn.cs_style_1.cs_color_3 {
-  background-color: #fff;
-  color: var(--deep-black);
+.cs_btn:hover {
+  color: var(--white);
+}
+.cs_btn:hover::before {
+  width: 100%;
+}
+.cs_btn.cs_style_2 {
+  background-color: var(--white);
+  color: var(--heading-color-light);
   border: 2px solid var(--border-gold);
   transition: all 0.3s ease;
-}
-.cs_btn.cs_style_1.cs_color_3:hover {
-  background: var(--primary-gradient);
-  color: #fff;
-  border-color: var(--primary-accent);
-  box-shadow: 0 4px 15px var(--shadow-color);
-  transform: translateY(-2px);
 }
 
 .cs_player_btn {
@@ -4901,7 +4988,7 @@ i {
   color: var(--primary-accent);
 }
 .cs_site_header.cs_style_1 .cs_search_toggle:hover {
-  background: var(--primary-gradient);
+  background: var(--gold-gradient);
   border-color: var(--primary-accent);
   color: #fff;
   box-shadow: 0 4px 15px var(--shadow-color);
@@ -4943,9 +5030,9 @@ i {
 }
 
 .cs_site_header.cs_style_1.cs_sticky_active {
-  background: var(--deep-black);
+  background: var(--matte-black);
   border-bottom: 1px solid var(--border-gold);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 10px 30px rgba(26, 26, 26, 0.8);
 }
 
 .cs_site_header_full_width .container {
@@ -4953,7 +5040,7 @@ i {
   padding: 0 100px;
 }
 
-/* Logo Styling for Black & Gold Theme */
+/* Logo Styling for Golden-Yellow + Black Theme */
 .cs_site_branding {
   display: inline-block;
 }
@@ -5853,7 +5940,7 @@ i {
   color: var(--primary-accent);
   display: inline-block;
   position: relative;
-  background: linear-gradient(135deg, var(--primary-accent) 0%, var(--medium-gold) 100%);
+  background: linear-gradient(135deg, var(--primary-accent) 0%, var(--muted-honey) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -5913,7 +6000,7 @@ i {
   gap: 15px;
 }
 .cs_hero.cs_style_1 .cs_hero_text {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(253, 247, 228, 0.9) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(252, 247, 240, 0.9) 100%);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   border: 2px solid var(--border-gold);
@@ -6133,7 +6220,7 @@ i {
   margin-bottom: 15px;
 }
 .cs_iconbox.cs_style_1 .cs_iconbox_icon {
-  background: linear-gradient(135deg, var(--soft-gold-bg) 0%, var(--white) 100%);
+  background: linear-gradient(135deg, var(--light-cream-bg) 0%, var(--white) 100%);
   border: 2px solid var(--border-gold);
   box-shadow: 0px 4px 20px var(--shadow-color);
   height: 58px;
@@ -8361,7 +8448,7 @@ i {
   content: "";
   width: 93%;
   height: 100%;
-  background: linear-gradient(135deg, var(--white) 0%, var(--soft-gold-bg) 100%);
+  background: linear-gradient(135deg, var(--white) 0%, var(--light-cream-bg) 100%);
   border: 1px solid var(--border-gold);
   position: absolute;
   left: 0;
@@ -8760,7 +8847,7 @@ i {
 .cs_card.cs_style_6 .cs_card_thumbnail {
   width: 200px;
   height: 200px;
-  border: 10px solid var(--white);
+  border: 1px solid var(--white);
   filter: drop-shadow(0px 0px 13px rgba(0, 0, 0, 0.07));
   border-radius: 50%;
   margin: -140px 0px 30px;
@@ -9091,39 +9178,300 @@ i {
 }
 
 /*--------------------------------
- Black & Gold Theme Global Styles
+ CRITICAL TEXT VISIBILITY FIX
+ -------------------------------*/
+/* Global fix for any white background ensuring text is visible */
+*[style*="background: white"],
+*[style*="background-color: white"],
+*[style*="background: #fff"],
+*[style*="background-color: #fff"],
+*[style*="background: #ffffff"],
+*[style*="background-color: #ffffff"],
+.bg-white,
+.white-bg {
+  color: var(--body-color-light) !important;
+}
+*[style*="background: white"] h1, *[style*="background: white"] h2, *[style*="background: white"] h3, *[style*="background: white"] h4, *[style*="background: white"] h5, *[style*="background: white"] h6,
+*[style*="background: white"] .cs_hero_title, *[style*="background: white"] .cs_section_title,
+*[style*="background-color: white"] h1,
+*[style*="background-color: white"] h2,
+*[style*="background-color: white"] h3,
+*[style*="background-color: white"] h4,
+*[style*="background-color: white"] h5,
+*[style*="background-color: white"] h6,
+*[style*="background-color: white"] .cs_hero_title,
+*[style*="background-color: white"] .cs_section_title,
+*[style*="background: #fff"] h1,
+*[style*="background: #fff"] h2,
+*[style*="background: #fff"] h3,
+*[style*="background: #fff"] h4,
+*[style*="background: #fff"] h5,
+*[style*="background: #fff"] h6,
+*[style*="background: #fff"] .cs_hero_title,
+*[style*="background: #fff"] .cs_section_title,
+*[style*="background-color: #fff"] h1,
+*[style*="background-color: #fff"] h2,
+*[style*="background-color: #fff"] h3,
+*[style*="background-color: #fff"] h4,
+*[style*="background-color: #fff"] h5,
+*[style*="background-color: #fff"] h6,
+*[style*="background-color: #fff"] .cs_hero_title,
+*[style*="background-color: #fff"] .cs_section_title,
+*[style*="background: #ffffff"] h1,
+*[style*="background: #ffffff"] h2,
+*[style*="background: #ffffff"] h3,
+*[style*="background: #ffffff"] h4,
+*[style*="background: #ffffff"] h5,
+*[style*="background: #ffffff"] h6,
+*[style*="background: #ffffff"] .cs_hero_title,
+*[style*="background: #ffffff"] .cs_section_title,
+*[style*="background-color: #ffffff"] h1,
+*[style*="background-color: #ffffff"] h2,
+*[style*="background-color: #ffffff"] h3,
+*[style*="background-color: #ffffff"] h4,
+*[style*="background-color: #ffffff"] h5,
+*[style*="background-color: #ffffff"] h6,
+*[style*="background-color: #ffffff"] .cs_hero_title,
+*[style*="background-color: #ffffff"] .cs_section_title,
+.bg-white h1,
+.bg-white h2,
+.bg-white h3,
+.bg-white h4,
+.bg-white h5,
+.bg-white h6,
+.bg-white .cs_hero_title,
+.bg-white .cs_section_title,
+.white-bg h1,
+.white-bg h2,
+.white-bg h3,
+.white-bg h4,
+.white-bg h5,
+.white-bg h6,
+.white-bg .cs_hero_title,
+.white-bg .cs_section_title {
+  color: var(--heading-color-light) !important;
+}
+*[style*="background: white"] p, *[style*="background: white"] span, *[style*="background: white"] div, *[style*="background: white"] li, *[style*="background: white"] a,
+*[style*="background: white"] .cs_hero_subtitle, *[style*="background: white"] .cs_section_subtitle,
+*[style*="background-color: white"] p,
+*[style*="background-color: white"] span,
+*[style*="background-color: white"] div,
+*[style*="background-color: white"] li,
+*[style*="background-color: white"] a,
+*[style*="background-color: white"] .cs_hero_subtitle,
+*[style*="background-color: white"] .cs_section_subtitle,
+*[style*="background: #fff"] p,
+*[style*="background: #fff"] span,
+*[style*="background: #fff"] div,
+*[style*="background: #fff"] li,
+*[style*="background: #fff"] a,
+*[style*="background: #fff"] .cs_hero_subtitle,
+*[style*="background: #fff"] .cs_section_subtitle,
+*[style*="background-color: #fff"] p,
+*[style*="background-color: #fff"] span,
+*[style*="background-color: #fff"] div,
+*[style*="background-color: #fff"] li,
+*[style*="background-color: #fff"] a,
+*[style*="background-color: #fff"] .cs_hero_subtitle,
+*[style*="background-color: #fff"] .cs_section_subtitle,
+*[style*="background: #ffffff"] p,
+*[style*="background: #ffffff"] span,
+*[style*="background: #ffffff"] div,
+*[style*="background: #ffffff"] li,
+*[style*="background: #ffffff"] a,
+*[style*="background: #ffffff"] .cs_hero_subtitle,
+*[style*="background: #ffffff"] .cs_section_subtitle,
+*[style*="background-color: #ffffff"] p,
+*[style*="background-color: #ffffff"] span,
+*[style*="background-color: #ffffff"] div,
+*[style*="background-color: #ffffff"] li,
+*[style*="background-color: #ffffff"] a,
+*[style*="background-color: #ffffff"] .cs_hero_subtitle,
+*[style*="background-color: #ffffff"] .cs_section_subtitle,
+.bg-white p,
+.bg-white span,
+.bg-white div,
+.bg-white li,
+.bg-white a,
+.bg-white .cs_hero_subtitle,
+.bg-white .cs_section_subtitle,
+.white-bg p,
+.white-bg span,
+.white-bg div,
+.white-bg li,
+.white-bg a,
+.white-bg .cs_hero_subtitle,
+.white-bg .cs_section_subtitle {
+  color: var(--body-color-light) !important;
+}
+
+/*--------------------------------
+ Golden-Yellow + Black Theme Global Styles
  -------------------------------*/
 /* Global Body & Background Styling */
 body {
-  background: var(--deep-black);
-  color: var(--body-color);
+  background: var(--matte-black);
+  color: var(--body-color-dark);
   transition: all 0.3s ease;
 }
 
-/* Section Backgrounds */
+/* Section Backgrounds with proper text contrast */
 .cs_section_bg_1 {
-  background: var(--deep-black);
+  background: var(--light-cream-bg);
+  color: var(--body-color-light);
+}
+.cs_section_bg_1 h1, .cs_section_bg_1 h2, .cs_section_bg_1 h3, .cs_section_bg_1 h4, .cs_section_bg_1 h5, .cs_section_bg_1 h6 {
+  color: var(--heading-color-light);
+}
+.cs_section_bg_1 p, .cs_section_bg_1 span, .cs_section_bg_1 div, .cs_section_bg_1 li {
+  color: var(--body-color-light);
 }
 
 .cs_section_bg_2 {
-  background: var(--dark-gray);
+  background: var(--charcoal-gray);
+  color: var(--body-color-dark);
+}
+.cs_section_bg_2 h1, .cs_section_bg_2 h2, .cs_section_bg_2 h3, .cs_section_bg_2 h4, .cs_section_bg_2 h5, .cs_section_bg_2 h6 {
+  color: var(--heading-color-dark);
 }
 
 .cs_section_bg_3 {
   background: var(--primary-gradient);
+  color: var(--body-color-dark);
+}
+.cs_section_bg_3 h1, .cs_section_bg_3 h2, .cs_section_bg_3 h3, .cs_section_bg_3 h4, .cs_section_bg_3 h5, .cs_section_bg_3 h6 {
+  color: var(--heading-color-dark);
 }
 
 .cs_section_bg_light {
-  background: var(--soft-gold-bg);
+  background: var(--ivory-cream);
+  color: var(--body-color-light);
+}
+.cs_section_bg_light h1, .cs_section_bg_light h2, .cs_section_bg_light h3, .cs_section_bg_light h4, .cs_section_bg_light h5, .cs_section_bg_light h6 {
+  color: var(--heading-color-light);
+}
+.cs_section_bg_light p, .cs_section_bg_light span, .cs_section_bg_light div, .cs_section_bg_light li {
+  color: var(--body-color-light);
+}
+
+/* White background sections */
+section[style*="background:#fff"],
+section[style*="background: #fff"],
+section[style*="background-color:#fff"],
+section[style*="background-color: #fff"],
+.bg-white {
+  background: var(--ivory-cream) !important;
+  color: var(--body-color-light);
+}
+section[style*="background:#fff"] h1, section[style*="background:#fff"] h2, section[style*="background:#fff"] h3, section[style*="background:#fff"] h4, section[style*="background:#fff"] h5, section[style*="background:#fff"] h6,
+section[style*="background: #fff"] h1,
+section[style*="background: #fff"] h2,
+section[style*="background: #fff"] h3,
+section[style*="background: #fff"] h4,
+section[style*="background: #fff"] h5,
+section[style*="background: #fff"] h6,
+section[style*="background-color:#fff"] h1,
+section[style*="background-color:#fff"] h2,
+section[style*="background-color:#fff"] h3,
+section[style*="background-color:#fff"] h4,
+section[style*="background-color:#fff"] h5,
+section[style*="background-color:#fff"] h6,
+section[style*="background-color: #fff"] h1,
+section[style*="background-color: #fff"] h2,
+section[style*="background-color: #fff"] h3,
+section[style*="background-color: #fff"] h4,
+section[style*="background-color: #fff"] h5,
+section[style*="background-color: #fff"] h6,
+.bg-white h1,
+.bg-white h2,
+.bg-white h3,
+.bg-white h4,
+.bg-white h5,
+.bg-white h6 {
+  color: var(--heading-color-light) !important;
+}
+section[style*="background:#fff"] p, section[style*="background:#fff"] span, section[style*="background:#fff"] div, section[style*="background:#fff"] li, section[style*="background:#fff"] .cs_hero_subtitle,
+section[style*="background: #fff"] p,
+section[style*="background: #fff"] span,
+section[style*="background: #fff"] div,
+section[style*="background: #fff"] li,
+section[style*="background: #fff"] .cs_hero_subtitle,
+section[style*="background-color:#fff"] p,
+section[style*="background-color:#fff"] span,
+section[style*="background-color:#fff"] div,
+section[style*="background-color:#fff"] li,
+section[style*="background-color:#fff"] .cs_hero_subtitle,
+section[style*="background-color: #fff"] p,
+section[style*="background-color: #fff"] span,
+section[style*="background-color: #fff"] div,
+section[style*="background-color: #fff"] li,
+section[style*="background-color: #fff"] .cs_hero_subtitle,
+.bg-white p,
+.bg-white span,
+.bg-white div,
+.bg-white li,
+.bg-white .cs_hero_subtitle {
+  color: var(--body-color-light) !important;
+}
+
+/* Additional white/light background fixes */
+*[style*="background-color: white"],
+*[style*="background-color: #ffffff"],
+*[style*="background: white"],
+*[style*="background: #ffffff"],
+.white-bg, .light-bg {
+  background: var(--ivory-cream) !important;
+}
+*[style*="background-color: white"] *,
+*[style*="background-color: #ffffff"] *,
+*[style*="background: white"] *,
+*[style*="background: #ffffff"] *,
+.white-bg *, .light-bg * {
+  color: var(--body-color-light) !important;
+}
+*[style*="background-color: white"] h1, *[style*="background-color: white"] h2, *[style*="background-color: white"] h3, *[style*="background-color: white"] h4, *[style*="background-color: white"] h5, *[style*="background-color: white"] h6,
+*[style*="background-color: #ffffff"] h1,
+*[style*="background-color: #ffffff"] h2,
+*[style*="background-color: #ffffff"] h3,
+*[style*="background-color: #ffffff"] h4,
+*[style*="background-color: #ffffff"] h5,
+*[style*="background-color: #ffffff"] h6,
+*[style*="background: white"] h1,
+*[style*="background: white"] h2,
+*[style*="background: white"] h3,
+*[style*="background: white"] h4,
+*[style*="background: white"] h5,
+*[style*="background: white"] h6,
+*[style*="background: #ffffff"] h1,
+*[style*="background: #ffffff"] h2,
+*[style*="background: #ffffff"] h3,
+*[style*="background: #ffffff"] h4,
+*[style*="background: #ffffff"] h5,
+*[style*="background: #ffffff"] h6,
+.white-bg h1,
+.white-bg h2,
+.white-bg h3,
+.white-bg h4,
+.white-bg h5,
+.white-bg h6, .light-bg h1, .light-bg h2, .light-bg h3, .light-bg h4, .light-bg h5, .light-bg h6 {
+  color: var(--heading-color-light) !important;
+}
+
+/* Force dark text on any light container */
+.container[style*="background: #fff"] h1, .container[style*="background: #fff"] h2, .container[style*="background: #fff"] h3, .container[style*="background: #fff"] h4, .container[style*="background: #fff"] h5, .container[style*="background: #fff"] h6, .container[style*="background-color: #fff"] h1, .container[style*="background-color: #fff"] h2, .container[style*="background-color: #fff"] h3, .container[style*="background-color: #fff"] h4, .container[style*="background-color: #fff"] h5, .container[style*="background-color: #fff"] h6, .container[style*="background: white"] h1, .container[style*="background: white"] h2, .container[style*="background: white"] h3, .container[style*="background: white"] h4, .container[style*="background: white"] h5, .container[style*="background: white"] h6, .container[style*="background-color: white"] h1, .container[style*="background-color: white"] h2, .container[style*="background-color: white"] h3, .container[style*="background-color: white"] h4, .container[style*="background-color: white"] h5, .container[style*="background-color: white"] h6, .row[style*="background: #fff"] h1, .row[style*="background: #fff"] h2, .row[style*="background: #fff"] h3, .row[style*="background: #fff"] h4, .row[style*="background: #fff"] h5, .row[style*="background: #fff"] h6, .row[style*="background-color: #fff"] h1, .row[style*="background-color: #fff"] h2, .row[style*="background-color: #fff"] h3, .row[style*="background-color: #fff"] h4, .row[style*="background-color: #fff"] h5, .row[style*="background-color: #fff"] h6, .row[style*="background: white"] h1, .row[style*="background: white"] h2, .row[style*="background: white"] h3, .row[style*="background: white"] h4, .row[style*="background: white"] h5, .row[style*="background: white"] h6, .row[style*="background-color: white"] h1, .row[style*="background-color: white"] h2, .row[style*="background-color: white"] h3, .row[style*="background-color: white"] h4, .row[style*="background-color: white"] h5, .row[style*="background-color: white"] h6, .col[style*="background: #fff"] h1, .col[style*="background: #fff"] h2, .col[style*="background: #fff"] h3, .col[style*="background: #fff"] h4, .col[style*="background: #fff"] h5, .col[style*="background: #fff"] h6, .col[style*="background-color: #fff"] h1, .col[style*="background-color: #fff"] h2, .col[style*="background-color: #fff"] h3, .col[style*="background-color: #fff"] h4, .col[style*="background-color: #fff"] h5, .col[style*="background-color: #fff"] h6, .col[style*="background: white"] h1, .col[style*="background: white"] h2, .col[style*="background: white"] h3, .col[style*="background: white"] h4, .col[style*="background: white"] h5, .col[style*="background: white"] h6, .col[style*="background-color: white"] h1, .col[style*="background-color: white"] h2, .col[style*="background-color: white"] h3, .col[style*="background-color: white"] h4, .col[style*="background-color: white"] h5, .col[style*="background-color: white"] h6 {
+  color: var(--heading-color-light) !important;
+}
+.container[style*="background: #fff"] p, .container[style*="background: #fff"] span, .container[style*="background: #fff"] div, .container[style*="background: #fff"] li, .container[style*="background-color: #fff"] p, .container[style*="background-color: #fff"] span, .container[style*="background-color: #fff"] div, .container[style*="background-color: #fff"] li, .container[style*="background: white"] p, .container[style*="background: white"] span, .container[style*="background: white"] div, .container[style*="background: white"] li, .container[style*="background-color: white"] p, .container[style*="background-color: white"] span, .container[style*="background-color: white"] div, .container[style*="background-color: white"] li, .row[style*="background: #fff"] p, .row[style*="background: #fff"] span, .row[style*="background: #fff"] div, .row[style*="background: #fff"] li, .row[style*="background-color: #fff"] p, .row[style*="background-color: #fff"] span, .row[style*="background-color: #fff"] div, .row[style*="background-color: #fff"] li, .row[style*="background: white"] p, .row[style*="background: white"] span, .row[style*="background: white"] div, .row[style*="background: white"] li, .row[style*="background-color: white"] p, .row[style*="background-color: white"] span, .row[style*="background-color: white"] div, .row[style*="background-color: white"] li, .col[style*="background: #fff"] p, .col[style*="background: #fff"] span, .col[style*="background: #fff"] div, .col[style*="background: #fff"] li, .col[style*="background-color: #fff"] p, .col[style*="background-color: #fff"] span, .col[style*="background-color: #fff"] div, .col[style*="background-color: #fff"] li, .col[style*="background: white"] p, .col[style*="background: white"] span, .col[style*="background: white"] div, .col[style*="background: white"] li, .col[style*="background-color: white"] p, .col[style*="background-color: white"] span, .col[style*="background-color: white"] div, .col[style*="background-color: white"] li {
+  color: var(--body-color-light) !important;
 }
 
 /* Enhanced Link Styling */
 a {
-  color: var(--primary-accent);
+  color: var(--soft-gold);
   transition: all 0.3s ease;
 }
 a:hover {
-  color: var(--medium-gold);
+  color: var(--muted-honey);
   text-decoration: none;
 }
 
@@ -9134,8 +9482,8 @@ input[type=email],
 input[type=tel],
 textarea {
   background: var(--card-background);
-  border: 2px solid var(--light-border);
-  color: var(--body-color);
+  border: 2px solid var(--border-light);
+  color: var(--body-color-dark);
   border-radius: 8px;
   transition: all 0.3s ease;
 }
@@ -9144,17 +9492,17 @@ input[type=text]:focus,
 input[type=email]:focus,
 input[type=tel]:focus,
 textarea:focus {
-  background: var(--deep-black);
-  border-color: var(--primary-accent);
+  background: var(--matte-black);
+  border-color: var(--soft-gold);
   box-shadow: 0 0 15px var(--shadow-color);
-  color: var(--white);
+  color: var(--ivory-cream);
 }
 .form-control::placeholder,
 input[type=text]::placeholder,
 input[type=email]::placeholder,
 input[type=tel]::placeholder,
 textarea::placeholder {
-  color: var(--body-color);
+  color: var(--warm-sand);
   opacity: 0.7;
 }
 
@@ -9167,7 +9515,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Section Dividers */
 .cs_section_divider {
   height: 2px;
-  background: var(--primary-gradient);
+  background: var(--gold-gradient);
   border: none;
   border-radius: 1px;
   margin: 40px 0;
@@ -9176,12 +9524,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Enhanced Card Shadows */
 .card, .cs_card {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  border: 1px solid var(--light-border);
+  box-shadow: 0 10px 30px rgba(26, 26, 26, 0.3);
+  border: 1px solid var(--border-light);
   transition: all 0.3s ease;
 }
 .card:hover, .cs_card:hover {
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4), 0 0 20px var(--shadow-color);
+  box-shadow: 0 15px 40px rgba(26, 26, 26, 0.4), 0 0 20px var(--shadow-color);
   transform: translateY(-5px);
 }
 
@@ -9206,12 +9554,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .home_form_area .cs_form_field {
   background: var(--card-background);
-  border: 2px solid var(--light-border);
+  border: 2px solid var(--border-light);
   transition: all 0.3s ease;
 }
 .home_form_area .cs_form_field:focus {
-  background: var(--deep-black);
-  border-color: var(--primary-accent);
+  background: var(--matte-black);
+  border-color: var(--soft-gold);
   box-shadow: 0 0 15px var(--shadow-color);
 }
 

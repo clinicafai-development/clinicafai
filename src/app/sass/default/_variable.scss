@@ -1,66 +1,81 @@
 /*--------------------------------------------------------------
-## All Color Variable - Luxurious Black & Gold Theme
+## All Color Variable - Elegant Golden-Yellow + Black Theme
 ----------------------------------------------------------------*/
 :root {
   /* ========================================
      🎨 Primary Color Palette
      ======================================== */
-  --primary-accent: #d4af37;        /* Royal Gold - Main brand accent */
-  --deep-black: #000000;            /* Deep Black - Primary background */
-  --heading-color: #ffffff;         /* Pure White - Headings and titles */
-  --body-color: #d1cfcf;           /* Light Gray - Body text */
+  --primary-accent: #D4AF7F;           /* Soft Gold - Main brand accent */
+  --secondary-accent: #E3C16F;         /* Muted Honey - Lighter gold accent */
+  --deep-black: #1A1A1A;              /* Matte Black - Primary background */
+  
+  /* Context-Aware Text Colors */
+  --heading-color-dark: #FCF7F0;       /* Ivory Cream headings on dark backgrounds */
+  --heading-color-light: #1A1A1A;     /* Matte Black headings on light backgrounds */
+  --body-color-dark: #E8DCC2;         /* Warm Sand body text on dark backgrounds */
+  --body-color-light: #3E3E3E;        /* Charcoal Gray body text on light backgrounds */
+  
+  /* Default text colors (for dark backgrounds) */
+  --heading-color: var(--heading-color-dark);
+  --body-color: var(--body-color-dark);
 
   /* ========================================
      🎨 Neutral Colors
      ======================================== */
-  --white: #ffffff;                 /* Pure White */
-  --black: #000000;                /* Pure Black */
-  --dark-gray: #1a1a1a;           /* Dark section backgrounds */
-  --light-gray: #2a2a2a;          /* Card backgrounds on dark mode */
-  --border-gold: #bfa24d;         /* Subtle border color */
+  --white: #ffffff;                   /* Pure White */
+  --black: #000000;                  /* Pure Black */
+  --matte-black: #1A1A1A;            /* Matte Black - Main dark color */
+  --charcoal-gray: #3E3E3E;          /* Charcoal Gray - Secondary dark */
+  --ivory-cream: #FCF7F0;            /* Ivory Cream - Main light color */
+  --warm-sand: #E8DCC2;              /* Warm Sand - Secondary light */
+  --rose-beige: #F3E6DC;             /* Rose Beige - Accent light */
 
   /* ========================================
      🌈 Extended Color Palette
      ======================================== */
   
   /* Gold Variations */
-  --light-gold: #f5e7b4;          /* Highlights and badges */
-  --medium-gold: #cfa93f;         /* Active elements and hover states */
-  --soft-gold-bg: #fdf7e4;        /* Light section backgrounds */
-  --gradient-gold-start: #d4af37;  /* Gradient start */
-  --gradient-gold-end: #b58e1f;    /* Gradient end */
+  --soft-gold: #D4AF7F;              /* Primary gold tone */
+  --muted-honey: #E3C16F;            /* Secondary gold tone */
+  --light-gold: #F0E4C1;            /* Very light gold for highlights */
+  --dark-gold: #B8956B;             /* Darker gold for hover states */
 
   /* Background Variations */
-  --dark-black-bg: #0a0a0a;       /* Section background for dark areas */
-  --deep-charcoal: #121212;       /* Alternate dark backgrounds */
-  --soft-white-bg: #fafafa;       /* Card/tabbed backgrounds in light mode */
-  --card-background: #1e1e1e;     /* Cards and interactive components */
+  --dark-black-bg: #0f0f0f;         /* Section background for dark areas */
+  --light-cream-bg: #FCF7F0;        /* Light section backgrounds */
+  --soft-sand-bg: #F5F0E8;          /* Alternative light background */
+  --card-background: #2a2a2a;       /* Cards and interactive components */
+  --border-gold: #D4AF7F;           /* Golden borders */
+  --border-light: #E8DCC2;          /* Light borders */
+  --light-border: #E8DCC2;          /* Legacy alias for border-light */
 
   /* Accent Colors */
-  --warning-highlight: #ffd700;    /* Bright gold for notifications */
-  --error-alert: #ff4c4c;         /* Red for alerts and errors */
-  --light-border: #333333;        /* Dividers and form inputs */
+  --warning-highlight: #E3C16F;      /* Muted honey for notifications */
+  --error-alert: #D4544F;           /* Soft red for alerts */
+  --success-color: #7FAF7F;         /* Soft green for success states */
 
   /* ========================================
      🔧 Usage Patterns
      ======================================== */
   
   /* Transparency & Overlays */
-  --dark-overlay: rgba(0, 0, 0, 0.7);
-  --gold-overlay: rgba(212, 175, 55, 0.1);
-  --white-transparency: rgba(255, 255, 255, 0.85);
-  --shadow-color: rgba(255, 215, 0, 0.15);
+  --dark-overlay: rgba(26, 26, 26, 0.8);
+  --gold-overlay: rgba(212, 175, 127, 0.1);
+  --light-overlay: rgba(252, 247, 240, 0.9);
+  --shadow-color: rgba(212, 175, 127, 0.25);
 
   /* Gradients */
-  --primary-gradient: linear-gradient(142deg, #000000 -8.12%, #d4af37 108.12%);
+  --primary-gradient: linear-gradient(142deg, #1A1A1A -8.12%, #D4AF7F 108.12%);
+  --gold-gradient: linear-gradient(135deg, #D4AF7F 0%, #E3C16F 100%);
+  --cream-gradient: linear-gradient(135deg, #FCF7F0 0%, #F3E6DC 100%);
 
   /* ========================================
      📊 Legacy Variable Mapping
      ======================================== */
-  --accent-color: var(--primary-accent);    /* Map old accent to gold */
-  --blue-color: var(--deep-black);         /* Replace blue with black */
-  --gray-color: var(--light-gray);         /* Update gray */
-  --border-color: var(--border-gold);      /* Update border color */
+  --accent-color: var(--primary-accent);      /* Map old accent to soft gold */
+  --blue-color: var(--deep-black);           /* Replace blue with matte black */
+  --gray-color: var(--charcoal-gray);        /* Update gray */
+  --border-color: var(--border-gold);        /* Update border color */
 
   /* Typography */
   --heading-font: 'Poppins', sans-serif;

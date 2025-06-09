@@ -21,41 +21,147 @@
 @import 'shortcode/pricing';
 @import 'shortcode/card';
 @import 'shortcode/tabs';
+
 /*--------------------------------
- Black & Gold Theme Global Styles
+ CRITICAL TEXT VISIBILITY FIX
+ -------------------------------*/
+
+/* Global fix for any white background ensuring text is visible */
+*[style*="background: white"],
+*[style*="background-color: white"], 
+*[style*="background: #fff"],
+*[style*="background-color: #fff"],
+*[style*="background: #ffffff"],
+*[style*="background-color: #ffffff"],
+.bg-white,
+.white-bg {
+  color: var(--body-color-light) !important;
+  
+  h1, h2, h3, h4, h5, h6,
+  .cs_hero_title, .cs_section_title {
+    color: var(--heading-color-light) !important;
+  }
+  
+  p, span, div, li, a, 
+  .cs_hero_subtitle, .cs_section_subtitle {
+    color: var(--body-color-light) !important;
+  }
+}
+
+/*--------------------------------
+ Golden-Yellow + Black Theme Global Styles
  -------------------------------*/
 
 /* Global Body & Background Styling */
 body {
-  background: var(--deep-black);
-  color: var(--body-color);
+  background: var(--matte-black);
+  color: var(--body-color-dark);
   transition: all 0.3s ease;
 }
 
-/* Section Backgrounds */
+/* Section Backgrounds with proper text contrast */
 .cs_section_bg_1 {
-  background: var(--deep-black);
+  background: var(--light-cream-bg);
+  color: var(--body-color-light);
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color-light);
+  }
+  
+  p, span, div, li {
+    color: var(--body-color-light);
+  }
 }
 
 .cs_section_bg_2 {
-  background: var(--dark-gray);
+  background: var(--charcoal-gray);
+  color: var(--body-color-dark);
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color-dark);
+  }
 }
 
 .cs_section_bg_3 {
   background: var(--primary-gradient);
+  color: var(--body-color-dark);
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color-dark);
+  }
 }
 
 .cs_section_bg_light {
-  background: var(--soft-gold-bg);
+  background: var(--ivory-cream);
+  color: var(--body-color-light);
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color-light);
+  }
+  
+  p, span, div, li {
+    color: var(--body-color-light);
+  }
+}
+
+/* White background sections */
+section[style*="background:#fff"], 
+section[style*="background: #fff"],
+section[style*="background-color:#fff"],
+section[style*="background-color: #fff"],
+.bg-white {
+  background: var(--ivory-cream) !important;
+  color: var(--body-color-light);
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color-light) !important;
+  }
+  
+  p, span, div, li, .cs_hero_subtitle {
+    color: var(--body-color-light) !important;
+  }
+}
+
+/* Additional white/light background fixes */
+*[style*="background-color: white"],
+*[style*="background-color: #ffffff"],
+*[style*="background: white"],
+*[style*="background: #ffffff"],
+.white-bg, .light-bg {
+  background: var(--ivory-cream) !important;
+  
+  * {
+    color: var(--body-color-light) !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color-light) !important;
+  }
+}
+
+/* Force dark text on any light container */
+.container, .row, .col {
+  &[style*="background: #fff"],
+  &[style*="background-color: #fff"],
+  &[style*="background: white"],
+  &[style*="background-color: white"] {
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--heading-color-light) !important;
+    }
+    
+    p, span, div, li {
+      color: var(--body-color-light) !important;
+    }
+  }
 }
 
 /* Enhanced Link Styling */
 a {
-  color: var(--primary-accent);
+  color: var(--soft-gold);
   transition: all 0.3s ease;
   
   &:hover {
-    color: var(--medium-gold);
+    color: var(--muted-honey);
     text-decoration: none;
   }
 }
@@ -67,20 +173,20 @@ input[type="email"],
 input[type="tel"], 
 textarea {
   background: var(--card-background);
-  border: 2px solid var(--light-border);
-  color: var(--body-color);
+  border: 2px solid var(--border-light);
+  color: var(--body-color-dark);
   border-radius: 8px;
   transition: all 0.3s ease;
   
   &:focus {
-    background: var(--deep-black);
-    border-color: var(--primary-accent);
+    background: var(--matte-black);
+    border-color: var(--soft-gold);
     box-shadow: 0 0 15px var(--shadow-color);
-    color: var(--white);
+    color: var(--ivory-cream);
   }
   
   &::placeholder {
-    color: var(--body-color);
+    color: var(--warm-sand);
     opacity: 0.7;
   }
 }
@@ -94,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Section Dividers */
 .cs_section_divider {
   height: 2px;
-  background: var(--primary-gradient);
+  background: var(--gold-gradient);
   border: none;
   border-radius: 1px;
   margin: 40px 0;
@@ -103,12 +209,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Enhanced Card Shadows */
 .card, .cs_card {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  border: 1px solid var(--light-border);
+  box-shadow: 0 10px 30px rgba(26, 26, 26, 0.3);
+  border: 1px solid var(--border-light);
   transition: all 0.3s ease;
   
   &:hover {
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4), 0 0 20px var(--shadow-color);
+    box-shadow: 0 15px 40px rgba(26, 26, 26, 0.4), 0 0 20px var(--shadow-color);
     transform: translateY(-5px);
   }
 }
@@ -130,12 +236,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .home_form_area .cs_form_field {
   background: var(--card-background);
-  border: 2px solid var(--light-border);
+  border: 2px solid var(--border-light);
   transition: all 0.3s ease;
   
   &:focus {
-    background: var(--deep-black);
-    border-color: var(--primary-accent);
+    background: var(--matte-black);
+    border-color: var(--soft-gold);
     box-shadow: 0 0 15px var(--shadow-color);
   }
 }

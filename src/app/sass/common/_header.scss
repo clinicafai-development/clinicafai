@@ -116,7 +116,7 @@
     transition: all 0.4s ease;
     color: var(--primary-accent);
     &:hover {
-      background: var(--primary-gradient);
+      background: var(--gold-gradient);
       border-color: var(--primary-accent);
       color: #fff;
       box-shadow: 0 4px 15px var(--shadow-color);
@@ -159,9 +159,9 @@
 
 .cs_site_header.cs_style_1 {
   &.cs_sticky_active {
-    background: var(--deep-black);
+    background: var(--matte-black);
     border-bottom: 1px solid var(--border-gold);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 10px 30px rgba(26, 26, 26, 0.8);
   }
 }
 
@@ -172,7 +172,7 @@
   }
 }
 
-/* Logo Styling for Black & Gold Theme */
+/* Logo Styling for Golden-Yellow + Black Theme */
 .cs_site_branding {
   display: inline-block;
   

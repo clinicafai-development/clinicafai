@@ -17,7 +17,7 @@
       color: var(--primary-accent);
       display: inline-block;
       position: relative;
-      background: linear-gradient(135deg, var(--primary-accent) 0%, var(--medium-gold) 100%);
+      background: linear-gradient(135deg, var(--primary-accent) 0%, var(--muted-honey) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -78,7 +78,7 @@
     gap: 15px;
   }
   .cs_hero_text {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(253, 247, 228, 0.9) 100%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(252, 247, 240, 0.9) 100%);
     backdrop-filter: blur(10px);
     border: 2px solid var(--border-gold);
     max-width: 825px;
