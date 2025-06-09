@@ -19,8 +19,8 @@ const Header = ({ isTopBar, variant }) => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [isSticky, setIsSticky] = useState();
   const menu = {
-    email: 'demo@example.com',
-    location: '15/K, Dhaka London City, LOT',
+    email: 'contact@clinicafai.com',
+    location: 'Clinica Fai, 1335/A, Rd Number 45, Jubilee Hills, Hyderabad',
     logoUrl: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/logo//Logo.png',
     logoLink: '/',
     navItems: [
@@ -78,13 +78,15 @@ const Header = ({ isTopBar, variant }) => {
                       <i>
                         <FaEnvelope />
                       </i>
-                      <Link href={`mailto:${menu.email}`}>{menu.email}</Link>
+                      <Link href={`https://mail.google.com/mail/?view=cm&fs=1&to=${menu.email}`} target="_blank">{menu.email}</Link>
                     </li>
                     <li>
                       <i>
                         <FaLocationDot />
                       </i>
-                      {menu.location}
+                      <Link href="https://maps.google.com/?q=Clinica+Fai,+1335/A,+Rd+Number+45,+Jubilee+Hills,+Hyderabad,+Telangana+500033" target="_blank">
+                        {menu.location}
+                      </Link>
                     </li>
                   </ul>
                 </div>

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { BsTwitter } from 'react-icons/bs';
-import { FaPhoneAlt } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import {
   FaFacebookF,
   FaInstagram,
@@ -69,7 +69,7 @@ const data = {
       title: 'The Medical Of This Working Health',
     },
   ],
-  copyrightText: 'Copyright © 2024 Medilo, All Rights Reserved.',
+  copyrightText: 'Copyright © 2024 Clinica Fai, All Rights Reserved.',
   footerMenu: [
     { href: 'about.html', text: 'About Us' },
     { href: '#', text: 'Events' },
@@ -172,9 +172,11 @@ const Footer = () => {
                   >
                     <FaLocationDot />
                   </i>
-                  <span
-                    dangerouslySetInnerHTML={{ __html: data.contactText2 }}
-                  />
+                  <Link href="https://maps.google.com/?q=Clinica+Fai,+1335/A,+Rd+Number+45,+Jubilee+Hills,+Hyderabad,+Telangana+500033" target="_blank">
+                    <span
+                      dangerouslySetInnerHTML={{ __html: data.contactText2 }}
+                    />
+                  </Link>
                 </li>
                 <li>
                   <i
@@ -186,9 +188,25 @@ const Footer = () => {
                   >
                     <FaPhoneAlt />
                   </i>
-                  <span
-                    dangerouslySetInnerHTML={{ __html: data.contactText3 }}
-                  />
+                  <Link href="tel:+916281117454">
+                    <span
+                      dangerouslySetInnerHTML={{ __html: data.contactText3 }}
+                    />
+                  </Link>
+                </li>
+                <li>
+                  <i
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'flex-start',
+                    }}
+                  >
+                    <FaEnvelope />
+                  </i>
+                  <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@clinicafai.com" target="_blank">
+                    <span>contact@clinicafai.com</span>
+                  </Link>
                 </li>
               </ul>
               <div className="cs_social_btns cs_style_1">
@@ -274,4 +292,4 @@ const Footer = () => {
   );
 };
 
-export default Foot
+export default Footer;

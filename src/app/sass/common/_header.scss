@@ -79,34 +79,37 @@
   transition: all 0.4s ease;
 }
 
-.cs_site_header.cs_style_1 {
-  .cs_main_header_in,
-  .cs_top_header_in {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    position: relative;
-  }
+  .cs_site_header.cs_style_1 {
+    .cs_main_header_in,
+    .cs_top_header_in {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      position: relative;
+      width: 100%;
+    }
   .cs_main_header_in {
     height: 100px;
   }
   .cs_top_header_in {
     height: 50px;
   }
-  .cs_main_header_right {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    gap: 5px 40px;
-    @media (max-width: 1199px) {
-      padding-right: 50px;
-      gap: 5px 25px;
+      .cs_main_header_right {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      gap: 5px 40px;
+      flex-shrink: 0;
+      @media (max-width: 1199px) {
+        padding-right: 50px;
+        gap: 5px 25px;
+      }
+      @media (max-width: 575px) {
+        gap: 5px 8px;
+        padding-right: 20px;
+      }
     }
-    @media (max-width: 575px) {
-      gap: 5px 0px;
-    }
-  }
   .cs_search_toggle {
     height: 35px;
     width: 35px;
@@ -175,6 +178,7 @@
 /* Logo Styling for Golden-Yellow + Black Theme */
 .cs_site_branding {
   display: inline-block;
+  flex-shrink: 0;
   
   img {
     filter: drop-shadow(0 2px 8px var(--shadow-color));
@@ -194,6 +198,7 @@
     
     @media (max-width: 575px) {
       max-height: 40px;
+      min-width: 150px;
     }
   }
 }
@@ -551,6 +556,11 @@
       padding-right: 8px;
       padding-left: 8px;
     }
+    .container {
+      padding-right: 15px;
+      padding-left: 15px;
+      max-width: 100%;
+    }
   }
   .cs_nav {
     .cs_nav_list {
@@ -762,6 +772,10 @@
     .cs_main_header_in {
       height: 80px;
     }
+    .cs_main_header_right {
+      padding-right: 0px;
+      gap: 5px 15px;
+    }
   }
 
   .cs_site_header {
@@ -812,6 +826,29 @@
   .cs_site_header {
     .cs_btn.cs_style_1 {
       display: none;
+    }
+  }
+  .cs_site_header.cs_style_1 {
+    .cs_main_header_right {
+      gap: 5px 10px;
+    }
+    .cs_search_wrap {
+      margin-right: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .cs_site_header.cs_style_1 {
+    .cs_main_header_in {
+      height: 70px;
+    }
+    .cs_main_header_right {
+      gap: 5px 8px;
+    }
+    .cs_search_toggle {
+      height: 30px;
+      width: 30px;
     }
   }
 }

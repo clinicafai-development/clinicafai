@@ -18,13 +18,13 @@ const poppins = Poppins({
 export const metadata = {
   title: {
     absolute: '',
-    default: 'Medilo- Medical & Health NextJS Template',
-    template: '%s | Medilo- Medical & Health NextJS Template',
+    default: 'Clinica Fai - Premier Medical & Healthcare Services',
+    template: '%s | Clinica Fai - Medical & Healthcare',
   },
-  description: 'Medilo- Medical & Health NextJS Template',
+  description: 'Clinica Fai - Premier Medical & Healthcare Services in Hyderabad',
   openGraph: {
-    title: 'Medilo- Medical & Health NextJS Template',
-    description: 'Medilo- Medical & Health NextJS Template',
+    title: 'Clinica Fai - Premier Medical & Healthcare Services',
+    description: 'Clinica Fai - Premier Medical & Healthcare Services in Hyderabad',
     image: '/openGraphImage.jpg',
   },
 };
