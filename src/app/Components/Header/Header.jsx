@@ -24,45 +24,11 @@ const Header = ({ isTopBar, variant }) => {
     logoUrl: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/logo//Logo.png',
     logoLink: '/',
     navItems: [
-      {
-        label: 'Home',
-        href: '/',
-        subItems: [
-          { label: 'Main Home', href: '/' },
-          { label: 'Home V2', href: '/home-v2' },
-          { label: 'Home V3', href: '/home-v3' },
-        ],
-      },
-      { label: 'About', href: '/about' },
-      {
-        label: 'Service',
-        href: '/service',
-        subItems: [
-          { label: 'Service', href: '/service' },
-          { label: 'Service Details', href: '/service/service-details' },
-        ],
-      },
-      {
-        label: 'Blog',
-        href: '/blog',
-        subItems: [
-          { label: 'Blog List', href: '/blog' },
-          { label: 'Blog Details', href: '/blog/blog-details' },
-        ],
-      },
-      {
-        label: 'Pages',
-        href: '/',
-        subItems: [
-          { label: 'Appointments', href: '/appointments' },
-          { label: 'Doctors', href: '/doctors' },
-          { label: 'Doctor Details', href: '/doctors/doctor-details' },
-          { label: 'Timetable', href: '/timetable' },
-          { label: 'Portfolio', href: '/portfolio' },
-          { label: 'Contact', href: '/contact' },
-        ],
-      },
-      { label: 'Contact', href: '/contact' },
+      { label: 'Home', href: '/' },
+      { label: 'Dr. Shubhra Goel', href: '/about' },
+      { label: 'Our Services', href: '/service' },
+      { label: 'Knowledge Center', href: '/blog' },
+      { label: 'Contact Us', href: '/contact' },
     ],
     btnUrl: '/contact',
     btnText: 'Contact Now',

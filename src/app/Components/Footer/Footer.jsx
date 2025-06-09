@@ -83,9 +83,9 @@ const Footer = () => {
     backgroundImage: '/assets/img/footer_bg.jpg',
     logo: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/logo//Logo.png',
     contactText:
-      'Open Hours of Government: <br /> Mon - Fri: 8.00 am. - 6.00 pm.',
-    contactText2: '13/A, Miranda Halim City.',
-    contactText3: '099 695 695 35',
+      'Open Hours: <br /> Mon - Fri: 8.00 am. - 6.00 pm.',
+    contactText2: 'Clinica Fai, 1335/A, Rd Number 45, Jubilee Hills, Hyderabad, Telangana 500033',
+    contactText3: '+91 62811 17454',
     facebookHref: '/',
     pinterestHref: '/',
     twitterHref: '/',
@@ -126,7 +126,7 @@ const Footer = () => {
         title: 'The Medical Of This Working Health',
       },
     ],
-    copyrightText: 'Copyright © 2024 Medilo, All Rights Reserved.',
+    copyrightText: 'Copyright © 2024 Clinica Fai, All Rights Reserved.',
     footerMenu: [
       { href: '/about', text: 'About Us' },
       { href: '/', text: 'Events' },
@@ -274,4 +274,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Foot
