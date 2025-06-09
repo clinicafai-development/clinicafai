@@ -55,10 +55,13 @@
     border: none;
     padding: 10px;
     border-radius: 0 5px 5px 0;
-    background-color: var(--accent-color);
+    background: var(--primary-gradient);
     color: #fff;
+    transition: all 0.3s ease;
     &:hover {
-      background-color: var(--blue-color);
+      background: var(--deep-black);
+      border: 1px solid var(--primary-accent);
+      box-shadow: 0 4px 15px var(--shadow-color);
     }
   }
 }
@@ -107,14 +110,16 @@
   .cs_search_toggle {
     height: 35px;
     width: 35px;
-    border: 1px solid var(--body-color);
+    border: 1px solid var(--border-gold);
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.4s ease;
+    color: var(--primary-accent);
     &:hover {
-      background-color: var(--accent-color);
-      border-color: var(--accent-color);
+      background: var(--primary-gradient);
+      border-color: var(--primary-accent);
       color: #fff;
+      box-shadow: 0 4px 15px var(--shadow-color);
     }
   }
   &.cs_type_1 {
@@ -154,8 +159,9 @@
 
 .cs_site_header.cs_style_1 {
   &.cs_sticky_active {
-    background-color: var(--white);
-    box-shadow: 0 10px 10px -10px rgba(33, 43, 53, 0.1);
+    background: var(--deep-black);
+    border-bottom: 1px solid var(--border-gold);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
   }
 }
 

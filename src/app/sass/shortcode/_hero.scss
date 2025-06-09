@@ -14,9 +14,13 @@
       font-size: 48px;
     }
     span {
-      color: var(--accent-color);
+      color: var(--primary-accent);
       display: inline-block;
       position: relative;
+      background: linear-gradient(135deg, var(--primary-accent) 0%, var(--medium-gold) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
       &::before {
         content: '';
         position: absolute;
@@ -24,7 +28,9 @@
         width: 95%;
         left: 0;
         bottom: 5px;
-        background-color: var(--accent-color);
+        background: var(--primary-gradient);
+        border-radius: 3px;
+        box-shadow: 0 2px 10px var(--shadow-color);
       }
     }
   }
@@ -34,30 +40,36 @@
     margin-bottom: 25px;
   }
   .cs_hero_info {
-    border-left: 5px solid var(--blue-color);
+    border-left: 5px solid var(--primary-accent);
     position: relative;
     padding: 4px 0px 4px 18px;
     margin-bottom: 35px;
+    background: var(--gold-overlay);
+    border-radius: 8px;
+    padding: 15px 20px 15px 25px;
+    box-shadow: 0 4px 20px var(--shadow-color);
     &::before {
       content: '';
       position: absolute;
       height: 8px;
       width: 8px;
-      background-color: var(--blue-color);
+      background: var(--primary-gradient);
       left: -4px;
       top: 50%;
       margin-top: -4px;
       transform: rotate(45deg);
       border-radius: 0 0 0 5px;
+      box-shadow: 0 2px 10px var(--shadow-color);
     }
     h3 {
       font-size: 24px;
-      color: var(--blue-color);
+      color: var(--primary-accent);
       margin-bottom: 4px;
+      font-weight: 600;
     }
     p {
       margin: 0;
-      color: var(--blue-color);
+      color: var(--deep-black);
     }
   }
   .cs_hero_btns {
@@ -66,12 +78,15 @@
     gap: 15px;
   }
   .cs_hero_text {
-    background-color: #fff;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(253, 247, 228, 0.9) 100%);
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--border-gold);
     max-width: 825px;
     width: 100%;
     padding: 60px 70px 70px 70px;
     border-radius: 50px;
     position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 0 30px var(--shadow-color);
     @media (max-width: 991px) {
       padding: 40px 30px 50px 30px;
     }

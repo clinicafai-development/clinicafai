@@ -833,18 +833,62 @@
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[13].use[5]!./src/app/sass/style.scss ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
 /*--------------------------------------------------------------
-## All Color Variable
+## All Color Variable - Luxurious Black & Gold Theme
 ----------------------------------------------------------------*/
 :root {
-  --white: #fff;
-  --black: #000;
-  --heading-color: #222;
-  --body-color: #636363;
-  --accent-color: #2ea6f7;
-  --blue-color: #002261;
-  --gray-color: #e8edf0;
-  --border-color: #dddddd;
+  /* ========================================
+     🎨 Primary Color Palette
+     ======================================== */
+  --primary-accent: #d4af37; /* Royal Gold - Main brand accent */
+  --deep-black: #000000; /* Deep Black - Primary background */
+  --heading-color: #ffffff; /* Pure White - Headings and titles */
+  --body-color: #d1cfcf; /* Light Gray - Body text */
+  /* ========================================
+     🎨 Neutral Colors
+     ======================================== */
+  --white: #ffffff; /* Pure White */
+  --black: #000000; /* Pure Black */
+  --dark-gray: #1a1a1a; /* Dark section backgrounds */
+  --light-gray: #2a2a2a; /* Card backgrounds on dark mode */
+  --border-gold: #bfa24d; /* Subtle border color */
+  /* ========================================
+     🌈 Extended Color Palette
+     ======================================== */
+  /* Gold Variations */
+  --light-gold: #f5e7b4; /* Highlights and badges */
+  --medium-gold: #cfa93f; /* Active elements and hover states */
+  --soft-gold-bg: #fdf7e4; /* Light section backgrounds */
+  --gradient-gold-start: #d4af37; /* Gradient start */
+  --gradient-gold-end: #b58e1f; /* Gradient end */
+  /* Background Variations */
+  --dark-black-bg: #0a0a0a; /* Section background for dark areas */
+  --deep-charcoal: #121212; /* Alternate dark backgrounds */
+  --soft-white-bg: #fafafa; /* Card/tabbed backgrounds in light mode */
+  --card-background: #1e1e1e; /* Cards and interactive components */
+  /* Accent Colors */
+  --warning-highlight: #ffd700; /* Bright gold for notifications */
+  --error-alert: #ff4c4c; /* Red for alerts and errors */
+  --light-border: #333333; /* Dividers and form inputs */
+  /* ========================================
+     🔧 Usage Patterns
+     ======================================== */
+  /* Transparency & Overlays */
+  --dark-overlay: rgba(0, 0, 0, 0.7);
+  --gold-overlay: rgba(212, 175, 55, 0.1);
+  --white-transparency: rgba(255, 255, 255, 0.85);
+  --shadow-color: rgba(255, 215, 0, 0.15);
+  /* Gradients */
+  --primary-gradient: linear-gradient(142deg, #000000 -8.12%, #d4af37 108.12%);
+  /* ========================================
+     📊 Legacy Variable Mapping
+     ======================================== */
+  --accent-color: var(--primary-accent); /* Map old accent to gold */
+  --blue-color: var(--deep-black); /* Replace blue with black */
+  --gray-color: var(--light-gray); /* Update gray */
+  --border-color: var(--border-gold); /* Update border color */
+  /* Typography */
   --heading-font: "Poppins", sans-serif;
   --body-font: "Rubik", sans-serif;
 }
@@ -2583,11 +2627,108 @@ hr {
 }
 
 .cs_gray_bg_2 {
-  background-color: #f0f4f6;
+  background-color: var(--soft-white-bg);
 }
 
 .cs_accent_bg {
   background-color: var(--accent-color);
+}
+
+/* ========================================
+   🎨 New Black & Gold Theme Utilities
+   ======================================== */
+/* Gold Color Classes */
+.cs_gold_color {
+  color: var(--primary-accent);
+}
+
+.cs_light_gold_color {
+  color: var(--light-gold);
+}
+
+.cs_medium_gold_color {
+  color: var(--medium-gold);
+}
+
+/* Background Classes */
+.cs_gold_bg {
+  background-color: var(--primary-accent);
+}
+
+.cs_dark_bg {
+  background-color: var(--dark-gray);
+}
+
+.cs_deep_black_bg {
+  background-color: var(--deep-black);
+}
+
+.cs_charcoal_bg {
+  background-color: var(--deep-charcoal);
+}
+
+.cs_card_bg {
+  background-color: var(--card-background);
+}
+
+.cs_soft_gold_bg {
+  background-color: var(--soft-gold-bg);
+}
+
+/* Gradient Backgrounds */
+.cs_gradient_bg {
+  background: var(--primary-gradient);
+}
+
+.cs_gold_gradient_bg {
+  background: linear-gradient(135deg, var(--gradient-gold-start) 0%, var(--gradient-gold-end) 100%);
+}
+
+/* Border Classes */
+.cs_gold_border {
+  border-color: var(--border-gold);
+}
+
+.cs_light_border {
+  border-color: var(--light-border);
+}
+
+/* Shadow Classes */
+.cs_gold_shadow {
+  box-shadow: 0 4px 20px var(--shadow-color);
+}
+
+.cs_gold_glow {
+  box-shadow: 0 0 20px var(--shadow-color);
+}
+
+/* Overlay Classes */
+.cs_dark_overlay {
+  position: relative;
+}
+.cs_dark_overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--dark-overlay);
+  z-index: 1;
+}
+
+.cs_gold_overlay {
+  position: relative;
+}
+.cs_gold_overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gold-overlay);
+  z-index: 1;
 }
 
 label {
@@ -2628,26 +2769,41 @@ label {
   font-size: 15px;
 }
 .cs_btn.cs_style_1.cs_color_1 {
-  background-color: var(--accent-color);
+  background: var(--primary-gradient);
   color: #fff;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
 }
 .cs_btn.cs_style_1.cs_color_1:hover {
-  background-color: var(--blue-color);
+  background: var(--deep-black);
+  border-color: var(--primary-accent);
+  box-shadow: 0 4px 15px var(--shadow-color);
+  transform: translateY(-2px);
 }
 .cs_btn.cs_style_1.cs_color_2 {
-  background-color: var(--blue-color);
-  color: #fff;
+  background-color: var(--deep-black);
+  color: var(--primary-accent);
+  border: 2px solid var(--primary-accent);
+  transition: all 0.3s ease;
 }
 .cs_btn.cs_style_1.cs_color_2:hover {
-  background-color: var(--accent-color);
+  background: var(--primary-gradient);
+  color: #fff;
+  box-shadow: 0 4px 15px var(--shadow-color);
+  transform: translateY(-2px);
 }
 .cs_btn.cs_style_1.cs_color_3 {
   background-color: #fff;
-  color: var(--blue-color);
+  color: var(--deep-black);
+  border: 2px solid var(--border-gold);
+  transition: all 0.3s ease;
 }
 .cs_btn.cs_style_1.cs_color_3:hover {
-  background-color: var(--accent-color);
+  background: var(--primary-gradient);
   color: #fff;
+  border-color: var(--primary-accent);
+  box-shadow: 0 4px 15px var(--shadow-color);
+  transform: translateY(-2px);
 }
 
 .cs_player_btn {
@@ -4735,15 +4891,17 @@ i {
 .cs_site_header.cs_style_1 .cs_search_toggle {
   height: 35px;
   width: 35px;
-  border: 1px solid var(--body-color);
+  border: 1px solid var(--border-gold);
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.4s ease;
+  color: var(--primary-accent);
 }
 .cs_site_header.cs_style_1 .cs_search_toggle:hover {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
+  background: var(--primary-gradient);
+  border-color: var(--primary-accent);
   color: #fff;
+  box-shadow: 0 4px 15px var(--shadow-color);
 }
 .cs_site_header.cs_style_1.cs_type_1 .cs_main_header_in {
   height: 110px;
@@ -8825,6 +8983,101 @@ i {
 }
 .cs_tab.active {
   display: block;
+}
+
+/*--------------------------------
+ Black & Gold Theme Global Styles
+ -------------------------------*/
+/* Global Body & Background Styling */
+body {
+  background: var(--deep-black);
+  color: var(--body-color);
+  transition: all 0.3s ease;
+}
+
+/* Section Backgrounds */
+.cs_section_bg_1 {
+  background: var(--deep-black);
+}
+
+.cs_section_bg_2 {
+  background: var(--dark-gray);
+}
+
+.cs_section_bg_3 {
+  background: var(--primary-gradient);
+}
+
+.cs_section_bg_light {
+  background: var(--soft-gold-bg);
+}
+
+/* Enhanced Link Styling */
+a {
+  color: var(--primary-accent);
+  transition: all 0.3s ease;
+}
+a:hover {
+  color: var(--medium-gold);
+  text-decoration: none;
+}
+
+/* Enhanced Form Styling */
+.form-control,
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  background: var(--card-background);
+  border: 2px solid var(--light-border);
+  color: var(--body-color);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.form-control:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+textarea:focus {
+  background: var(--deep-black);
+  border-color: var(--primary-accent);
+  box-shadow: 0 0 15px var(--shadow-color);
+  color: var(--white);
+}
+.form-control::placeholder,
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+input[type=tel]::placeholder,
+textarea::placeholder {
+  color: var(--body-color);
+  opacity: 0.7;
+}
+
+/* Enhanced Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+/* Section Dividers */
+.cs_section_divider {
+  height: 2px;
+  background: var(--primary-gradient);
+  border: none;
+  border-radius: 1px;
+  margin: 40px 0;
+  box-shadow: 0 2px 10px var(--shadow-color);
+}
+
+/* Enhanced Card Shadows */
+.card, .cs_card {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--light-border);
+  transition: all 0.3s ease;
+}
+.card:hover, .cs_card:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4), 0 0 20px var(--shadow-color);
+  transform: translateY(-5px);
 }
 
 /*--------------------------------

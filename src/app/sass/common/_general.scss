@@ -171,11 +171,111 @@ hr {
 }
 
 .cs_gray_bg_2 {
-  background-color: #f0f4f6;
+  background-color: var(--soft-white-bg);
 }
 
 .cs_accent_bg {
   background-color: var(--accent-color);
+}
+
+/* ========================================
+   🎨 New Black & Gold Theme Utilities
+   ======================================== */
+
+/* Gold Color Classes */
+.cs_gold_color {
+  color: var(--primary-accent);
+}
+
+.cs_light_gold_color {
+  color: var(--light-gold);
+}
+
+.cs_medium_gold_color {
+  color: var(--medium-gold);
+}
+
+/* Background Classes */
+.cs_gold_bg {
+  background-color: var(--primary-accent);
+}
+
+.cs_dark_bg {
+  background-color: var(--dark-gray);
+}
+
+.cs_deep_black_bg {
+  background-color: var(--deep-black);
+}
+
+.cs_charcoal_bg {
+  background-color: var(--deep-charcoal);
+}
+
+.cs_card_bg {
+  background-color: var(--card-background);
+}
+
+.cs_soft_gold_bg {
+  background-color: var(--soft-gold-bg);
+}
+
+/* Gradient Backgrounds */
+.cs_gradient_bg {
+  background: var(--primary-gradient);
+}
+
+.cs_gold_gradient_bg {
+  background: linear-gradient(135deg, var(--gradient-gold-start) 0%, var(--gradient-gold-end) 100%);
+}
+
+/* Border Classes */
+.cs_gold_border {
+  border-color: var(--border-gold);
+}
+
+.cs_light_border {
+  border-color: var(--light-border);
+}
+
+/* Shadow Classes */
+.cs_gold_shadow {
+  box-shadow: 0 4px 20px var(--shadow-color);
+}
+
+.cs_gold_glow {
+  box-shadow: 0 0 20px var(--shadow-color);
+}
+
+/* Overlay Classes */
+.cs_dark_overlay {
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--dark-overlay);
+    z-index: 1;
+  }
+}
+
+.cs_gold_overlay {
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gold-overlay);
+    z-index: 1;
+  }
 }
 
 label {
@@ -216,30 +316,45 @@ label {
   }
 
   &.cs_color_1 {
-    background-color: var(--accent-color);
+    background: var(--primary-gradient);
     color: #fff;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
 
     &:hover {
-      background-color: var(--blue-color);
+      background: var(--deep-black);
+      border-color: var(--primary-accent);
+      box-shadow: 0 4px 15px var(--shadow-color);
+      transform: translateY(-2px);
     }
   }
 
   &.cs_color_2 {
-    background-color: var(--blue-color);
-    color: #fff;
+    background-color: var(--deep-black);
+    color: var(--primary-accent);
+    border: 2px solid var(--primary-accent);
+    transition: all 0.3s ease;
 
     &:hover {
-      background-color: var(--accent-color);
+      background: var(--primary-gradient);
+      color: #fff;
+      box-shadow: 0 4px 15px var(--shadow-color);
+      transform: translateY(-2px);
     }
   }
 
   &.cs_color_3 {
     background-color: #fff;
-    color: var(--blue-color);
+    color: var(--deep-black);
+    border: 2px solid var(--border-gold);
+    transition: all 0.3s ease;
 
     &:hover {
-      background-color: var(--accent-color);
+      background: var(--primary-gradient);
       color: #fff;
+      border-color: var(--primary-accent);
+      box-shadow: 0 4px 15px var(--shadow-color);
+      transform: translateY(-2px);
     }
   }
 }

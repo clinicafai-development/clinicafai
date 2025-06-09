@@ -1,15 +1,68 @@
 /*--------------------------------------------------------------
-## All Color Variable
+## All Color Variable - Luxurious Black & Gold Theme
 ----------------------------------------------------------------*/
 :root {
-  --white: #fff;
-  --black: #000;
-  --heading-color: #222;
-  --body-color: #636363;
-  --accent-color: #2ea6f7;
-  --blue-color: #002261;
-  --gray-color: #e8edf0;
-  --border-color: #dddddd;
+  /* ========================================
+     🎨 Primary Color Palette
+     ======================================== */
+  --primary-accent: #d4af37;        /* Royal Gold - Main brand accent */
+  --deep-black: #000000;            /* Deep Black - Primary background */
+  --heading-color: #ffffff;         /* Pure White - Headings and titles */
+  --body-color: #d1cfcf;           /* Light Gray - Body text */
+
+  /* ========================================
+     🎨 Neutral Colors
+     ======================================== */
+  --white: #ffffff;                 /* Pure White */
+  --black: #000000;                /* Pure Black */
+  --dark-gray: #1a1a1a;           /* Dark section backgrounds */
+  --light-gray: #2a2a2a;          /* Card backgrounds on dark mode */
+  --border-gold: #bfa24d;         /* Subtle border color */
+
+  /* ========================================
+     🌈 Extended Color Palette
+     ======================================== */
+  
+  /* Gold Variations */
+  --light-gold: #f5e7b4;          /* Highlights and badges */
+  --medium-gold: #cfa93f;         /* Active elements and hover states */
+  --soft-gold-bg: #fdf7e4;        /* Light section backgrounds */
+  --gradient-gold-start: #d4af37;  /* Gradient start */
+  --gradient-gold-end: #b58e1f;    /* Gradient end */
+
+  /* Background Variations */
+  --dark-black-bg: #0a0a0a;       /* Section background for dark areas */
+  --deep-charcoal: #121212;       /* Alternate dark backgrounds */
+  --soft-white-bg: #fafafa;       /* Card/tabbed backgrounds in light mode */
+  --card-background: #1e1e1e;     /* Cards and interactive components */
+
+  /* Accent Colors */
+  --warning-highlight: #ffd700;    /* Bright gold for notifications */
+  --error-alert: #ff4c4c;         /* Red for alerts and errors */
+  --light-border: #333333;        /* Dividers and form inputs */
+
+  /* ========================================
+     🔧 Usage Patterns
+     ======================================== */
+  
+  /* Transparency & Overlays */
+  --dark-overlay: rgba(0, 0, 0, 0.7);
+  --gold-overlay: rgba(212, 175, 55, 0.1);
+  --white-transparency: rgba(255, 255, 255, 0.85);
+  --shadow-color: rgba(255, 215, 0, 0.15);
+
+  /* Gradients */
+  --primary-gradient: linear-gradient(142deg, #000000 -8.12%, #d4af37 108.12%);
+
+  /* ========================================
+     📊 Legacy Variable Mapping
+     ======================================== */
+  --accent-color: var(--primary-accent);    /* Map old accent to gold */
+  --blue-color: var(--deep-black);         /* Replace blue with black */
+  --gray-color: var(--light-gray);         /* Update gray */
+  --border-color: var(--border-gold);      /* Update border color */
+
+  /* Typography */
   --heading-font: 'Poppins', sans-serif;
   --body-font: 'Rubik', sans-serif;
 }
