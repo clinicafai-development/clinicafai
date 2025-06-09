@@ -10,6 +10,8 @@
   .cs_hero_title {
     font-size: 66px;
     margin-bottom: 12px;
+    color: var(--heading-color-light);
+    font-weight: 700;
     @media (max-width: 991px) {
       font-size: 48px;
     }
@@ -38,6 +40,7 @@
     font-size: 19px;
     max-width: 600px;
     margin-bottom: 25px;
+    color: var(--body-color-light);
   }
   .cs_hero_info {
     border-left: 5px solid var(--primary-accent);
@@ -87,6 +90,18 @@
     border-radius: 50px;
     position: relative;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 0 30px var(--shadow-color);
+    
+    /* Ensure all text is visible on light background */
+    color: var(--body-color-light);
+    
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--heading-color-light);
+    }
+    
+    p, span, div {
+      color: var(--body-color-light);
+    }
+    
     @media (max-width: 991px) {
       padding: 40px 30px 50px 30px;
     }
