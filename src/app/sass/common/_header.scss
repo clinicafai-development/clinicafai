@@ -172,6 +172,32 @@
   }
 }
 
+/* Logo Styling for Black & Gold Theme */
+.cs_site_branding {
+  display: inline-block;
+  
+  img {
+    filter: drop-shadow(0 2px 8px var(--shadow-color));
+    transition: all 0.3s ease;
+    max-height: 53px;
+    width: auto;
+    height: auto;
+    
+    &:hover {
+      filter: drop-shadow(0 4px 15px var(--shadow-color));
+      transform: scale(1.05);
+    }
+    
+    @media (max-width: 991px) {
+      max-height: 45px;
+    }
+    
+    @media (max-width: 575px) {
+      max-height: 40px;
+    }
+  }
+}
+
 .cs_site_header_spacing_150 {
   height: 150px;
 }

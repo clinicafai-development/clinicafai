@@ -4953,6 +4953,32 @@ i {
   padding: 0 100px;
 }
 
+/* Logo Styling for Black & Gold Theme */
+.cs_site_branding {
+  display: inline-block;
+}
+.cs_site_branding img {
+  filter: drop-shadow(0 2px 8px var(--shadow-color));
+  transition: all 0.3s ease;
+  max-height: 53px;
+  width: auto;
+  height: auto;
+}
+.cs_site_branding img:hover {
+  filter: drop-shadow(0 4px 15px var(--shadow-color));
+  transform: scale(1.05);
+}
+@media (max-width: 991px) {
+  .cs_site_branding img {
+    max-height: 45px;
+  }
+}
+@media (max-width: 575px) {
+  .cs_site_branding img {
+    max-height: 40px;
+  }
+}
+
 .cs_site_header_spacing_150 {
   height: 150px;
 }
@@ -5495,6 +5521,27 @@ i {
   height: 2px;
   background: var(--primary-gradient);
   border-radius: 1px;
+}
+.cs_footer_logo img {
+  filter: drop-shadow(0 2px 10px var(--shadow-color));
+  transition: all 0.3s ease;
+  max-height: 53px;
+  width: auto;
+  height: auto;
+}
+.cs_footer_logo img:hover {
+  filter: drop-shadow(0 4px 20px var(--shadow-color));
+  transform: scale(1.02);
+}
+@media (max-width: 991px) {
+  .cs_footer_logo img {
+    max-height: 45px;
+  }
+}
+@media (max-width: 575px) {
+  .cs_footer_logo img {
+    max-height: 40px;
+  }
 }
 
 .cs_footer_contact li {

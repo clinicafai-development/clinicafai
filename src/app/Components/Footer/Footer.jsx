@@ -12,7 +12,7 @@ import {
 
 const data = {
   backgroundImage: 'assets/img/footer_bg.jpg',
-  logo: '/assets/img/footer_logo.svg',
+  logo: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/logo//Logo.png',
   contact: [
     {
       icon: 'fa-regular fa-clock',
@@ -81,7 +81,7 @@ const data = {
 const Footer = () => {
   const data = {
     backgroundImage: '/assets/img/footer_bg.jpg',
-    logo: '/assets/img/footer_logo.svg',
+    logo: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/logo//Logo.png',
     contactText:
       'Open Hours of Government: <br /> Mon - Fri: 8.00 am. - 6.00 pm.',
     contactText2: '13/A, Miranda Halim City.',
@@ -145,7 +145,7 @@ const Footer = () => {
           <div className="cs_footer_col">
             <div className="cs_footer_highlight_col cs_accent_bg">
               <div className="cs_footer_logo">
-              <Image src={data.logo} alt="img" width={205} height={53}   />
+              <Image src={data.logo} alt="ClinicaFai - Medical Healthcare Footer Logo" width={205} height={53} />
               </div>
               <ul className="cs_footer_contact cs_mp_0">
                 <li>

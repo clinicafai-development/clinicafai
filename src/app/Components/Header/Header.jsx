@@ -21,7 +21,7 @@ const Header = ({ isTopBar, variant }) => {
   const menu = {
     email: 'demo@example.com',
     location: '15/K, Dhaka London City, LOT',
-    logoUrl: '/assets/img/logo.svg',
+    logoUrl: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/logo//Logo.png',
     logoLink: '/',
     navItems: [
       {
@@ -155,7 +155,7 @@ const Header = ({ isTopBar, variant }) => {
             <div className="cs_main_header_in">
               <div className="cs_main_header_left">
                 <Link className="cs_site_branding" href={menu.logoLink}>
-                <Image src={menu.logoUrl} alt="img" width={205} height={53}   />
+                <Image src={menu.logoUrl} alt="ClinicaFai - Medical Healthcare Logo" width={205} height={53} priority />
                 </Link>
               </div>
               <div className="cs_main_header_right ">
