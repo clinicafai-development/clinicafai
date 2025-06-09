@@ -12,7 +12,9 @@
   }
 
   .cs_iconbox_icon {
-    box-shadow: 0px 0px 49px rgba(18, 30, 59, 0.14);
+    background: linear-gradient(135deg, var(--soft-gold-bg) 0%, var(--white) 100%);
+    border: 2px solid var(--border-gold);
+    box-shadow: 0px 4px 20px var(--shadow-color);
     height: 58px;
     width: 58px;
     border-radius: 50%;
@@ -35,7 +37,10 @@
 
   &:hover {
     .cs_iconbox_icon {
-      background-color: var(--blue-color);
+      background: var(--primary-gradient);
+      border-color: var(--primary-accent);
+      box-shadow: 0px 8px 30px var(--shadow-color);
+      transform: translateY(-3px);
 
       img {
         filter: brightness(0) invert(1);

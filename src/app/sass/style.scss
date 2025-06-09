@@ -117,10 +117,7 @@ h1, h2, h3, h4, h5, h6 {
  Extra css
  -------------------------------*/
 .cs_hero.cs_style_1 .cs_hero_text {
-  background-color: inherit;
-  padding: inherit;
-  border-radius: inherit;
-  position: inherit;
+  /* Theme-specific hero text styling is handled in _hero.scss */
 }
 .cs_tab_links.cs_style_1 li a span {
   font-size: 19px;
@@ -132,7 +129,15 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 27px;
 }
 .home_form_area .cs_form_field {
-  background-color: #fff;
+  background: var(--card-background);
+  border: 2px solid var(--light-border);
+  transition: all 0.3s ease;
+  
+  &:focus {
+    background: var(--deep-black);
+    border-color: var(--primary-accent);
+    box-shadow: 0 0 15px var(--shadow-color);
+  }
 }
 .about-page-area .about-team hr{
   display: none;

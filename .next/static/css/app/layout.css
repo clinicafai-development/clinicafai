@@ -4837,11 +4837,14 @@ i {
   border: none;
   padding: 10px;
   border-radius: 0 5px 5px 0;
-  background-color: var(--accent-color);
+  background: var(--primary-gradient);
   color: #fff;
+  transition: all 0.3s ease;
 }
 .cs_header_search_form .cs_header_submit_btn:hover {
-  background-color: var(--blue-color);
+  background: var(--deep-black);
+  border: 1px solid var(--primary-accent);
+  box-shadow: 0 4px 15px var(--shadow-color);
 }
 
 .cs_search_wrap {
@@ -4940,8 +4943,9 @@ i {
 }
 
 .cs_site_header.cs_style_1.cs_sticky_active {
-  background-color: var(--white);
-  box-shadow: 0 10px 10px -10px rgba(33, 43, 53, 0.1);
+  background: var(--deep-black);
+  border-bottom: 1px solid var(--border-gold);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
 }
 
 .cs_site_header_full_width .container {
@@ -5450,12 +5454,19 @@ i {
 .cs_footer .cs_social_btns.cs_style_1 a {
   height: 40px;
   width: 40px;
-  background-color: #54b3f4;
-  box-shadow: 0px 0px 57px rgba(0, 0, 0, 0.05);
+  background: var(--deep-black);
+  border: 2px solid var(--primary-accent);
+  color: var(--primary-accent);
+  box-shadow: 0px 4px 20px var(--shadow-color);
   font-size: 16px;
+  transition: all 0.3s ease;
 }
 .cs_footer .cs_social_btns.cs_style_1 a:hover {
-  background-color: var(--blue-color);
+  background: var(--primary-gradient);
+  color: var(--white);
+  border-color: var(--white);
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 25px var(--shadow-color);
 }
 
 .cs_footer_highlight_col {
@@ -5472,7 +5483,18 @@ i {
 .cs_footer_logo {
   padding-bottom: 30px;
   margin-bottom: 25px;
-  border-bottom: 1px solid #fff;
+  border-bottom: 2px solid var(--primary-accent);
+  position: relative;
+}
+.cs_footer_logo::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: var(--primary-gradient);
+  border-radius: 1px;
 }
 
 .cs_footer_contact li {
@@ -5781,9 +5803,13 @@ i {
   }
 }
 .cs_hero.cs_style_1 .cs_hero_title span {
-  color: var(--accent-color);
+  color: var(--primary-accent);
   display: inline-block;
   position: relative;
+  background: linear-gradient(135deg, var(--primary-accent) 0%, var(--medium-gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .cs_hero.cs_style_1 .cs_hero_title span::before {
   content: "";
@@ -5792,7 +5818,9 @@ i {
   width: 95%;
   left: 0;
   bottom: 5px;
-  background-color: var(--accent-color);
+  background: var(--primary-gradient);
+  border-radius: 3px;
+  box-shadow: 0 2px 10px var(--shadow-color);
 }
 .cs_hero.cs_style_1 .cs_hero_subtitle {
   font-size: 19px;
@@ -5800,31 +5828,37 @@ i {
   margin-bottom: 25px;
 }
 .cs_hero.cs_style_1 .cs_hero_info {
-  border-left: 5px solid var(--blue-color);
+  border-left: 5px solid var(--primary-accent);
   position: relative;
   padding: 4px 0px 4px 18px;
   margin-bottom: 35px;
+  background: var(--gold-overlay);
+  border-radius: 8px;
+  padding: 15px 20px 15px 25px;
+  box-shadow: 0 4px 20px var(--shadow-color);
 }
 .cs_hero.cs_style_1 .cs_hero_info::before {
   content: "";
   position: absolute;
   height: 8px;
   width: 8px;
-  background-color: var(--blue-color);
+  background: var(--primary-gradient);
   left: -4px;
   top: 50%;
   margin-top: -4px;
   transform: rotate(45deg);
   border-radius: 0 0 0 5px;
+  box-shadow: 0 2px 10px var(--shadow-color);
 }
 .cs_hero.cs_style_1 .cs_hero_info h3 {
   font-size: 24px;
-  color: var(--blue-color);
+  color: var(--primary-accent);
   margin-bottom: 4px;
+  font-weight: 600;
 }
 .cs_hero.cs_style_1 .cs_hero_info p {
   margin: 0;
-  color: var(--blue-color);
+  color: var(--deep-black);
 }
 .cs_hero.cs_style_1 .cs_hero_btns {
   display: flex;
@@ -5832,12 +5866,16 @@ i {
   gap: 15px;
 }
 .cs_hero.cs_style_1 .cs_hero_text {
-  background-color: #fff;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(253, 247, 228, 0.9) 100%);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 2px solid var(--border-gold);
   max-width: 825px;
   width: 100%;
   padding: 60px 70px 70px 70px;
   border-radius: 50px;
   position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 0 30px var(--shadow-color);
 }
 @media (max-width: 991px) {
   .cs_hero.cs_style_1 .cs_hero_text {
@@ -6048,7 +6086,9 @@ i {
   margin-bottom: 15px;
 }
 .cs_iconbox.cs_style_1 .cs_iconbox_icon {
-  box-shadow: 0px 0px 49px rgba(18, 30, 59, 0.14);
+  background: linear-gradient(135deg, var(--soft-gold-bg) 0%, var(--white) 100%);
+  border: 2px solid var(--border-gold);
+  box-shadow: 0px 4px 20px var(--shadow-color);
   height: 58px;
   width: 58px;
   border-radius: 50%;
@@ -6066,7 +6106,10 @@ i {
   max-width: 250px;
 }
 .cs_iconbox.cs_style_1:hover .cs_iconbox_icon {
-  background-color: var(--blue-color);
+  background: var(--primary-gradient);
+  border-color: var(--primary-accent);
+  box-shadow: 0px 8px 30px var(--shadow-color);
+  transform: translateY(-3px);
 }
 .cs_iconbox.cs_style_1:hover .cs_iconbox_icon img {
   filter: brightness(0) invert(1);
@@ -8271,11 +8314,14 @@ i {
   content: "";
   width: 93%;
   height: 100%;
-  background-color: var(--white);
+  background: linear-gradient(135deg, var(--white) 0%, var(--soft-gold-bg) 100%);
+  border: 1px solid var(--border-gold);
   position: absolute;
   left: 0;
   top: 0;
   transition: all 0.4s ease;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 575px) {
   .cs_card.cs_style_1 .cs_card_info_wrapper::after {
@@ -8299,10 +8345,12 @@ i {
   content: "";
   width: 3px;
   height: 100%;
-  background-color: var(--accent-color);
+  background: var(--primary-gradient);
   position: absolute;
   left: 0;
   top: 0;
+  border-radius: 2px;
+  box-shadow: 0 2px 10px var(--shadow-color);
 }
 @media (max-width: 480px) {
   .cs_card.cs_style_1 .cs_card_text::after {
@@ -8312,16 +8360,19 @@ i {
 .cs_card.cs_style_1 .cs_card_index {
   width: 47px;
   height: 47px;
-  background-color: var(--blue-color);
+  background: var(--deep-black);
+  border: 2px solid var(--primary-accent);
   font-size: 18px;
   font-weight: 700;
-  color: var(--white);
+  color: var(--primary-accent);
   position: absolute;
   top: 50%;
   right: 10px;
   transform: translateY(-50%);
   z-index: 1;
   transition: all 0.4s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px var(--shadow-color);
 }
 .cs_card.cs_style_1 .cs_card_title {
   font-size: 22px;
@@ -8332,14 +8383,21 @@ i {
   transition: all 0.4s ease;
 }
 .cs_card.cs_style_1:hover .cs_card_info_wrapper:after {
-  background-color: var(--blue-color);
+  background: var(--primary-gradient);
+  border-color: var(--primary-accent);
+  box-shadow: 0 10px 30px var(--shadow-color);
+  transform: scale(1.02);
 }
 .cs_card.cs_style_1:hover .cs_card_title,
 .cs_card.cs_style_1:hover .cs_card_subtitle {
   color: var(--white);
 }
 .cs_card.cs_style_1:hover .cs_card_index {
-  background-color: var(--accent-color);
+  background: var(--primary-gradient);
+  color: var(--white);
+  border-color: var(--white);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 8px 25px var(--shadow-color);
 }
 
 .cs_card.cs_style_2 {
@@ -9084,10 +9142,7 @@ h1, h2, h3, h4, h5, h6 {
  Extra css
  -------------------------------*/
 .cs_hero.cs_style_1 .cs_hero_text {
-  background-color: inherit;
-  padding: inherit;
-  border-radius: inherit;
-  position: inherit;
+  /* Theme-specific hero text styling is handled in _hero.scss */
 }
 
 .cs_tab_links.cs_style_1 li a span {
@@ -9103,7 +9158,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .home_form_area .cs_form_field {
-  background-color: #fff;
+  background: var(--card-background);
+  border: 2px solid var(--light-border);
+  transition: all 0.3s ease;
+}
+.home_form_area .cs_form_field:focus {
+  background: var(--deep-black);
+  border-color: var(--primary-accent);
+  box-shadow: 0 0 15px var(--shadow-color);
 }
 
 .about-page-area .about-team hr {
