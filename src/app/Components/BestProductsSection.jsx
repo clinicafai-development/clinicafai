@@ -6,6 +6,8 @@ const products = [
   { name: 'Eye Care Serum', img: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=facearea&w=400&q=80', desc: 'Reduces puffiness and dark circles.' },
   { name: 'Hydrating Eye Drops', img: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=facearea&w=400&q=80', desc: 'Instant relief for dry eyes.' },
   { name: 'Lash Growth Oil', img: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=facearea&w=400&q=80', desc: 'Promotes longer, thicker lashes.' },
+  { name: 'Blue Light Glasses', img: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&w=400&q=80', desc: 'Protects eyes from digital screens.' },
+  { name: 'Vitamin Eye Tablets', img: 'https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=facearea&w=400&q=80', desc: 'Supports overall eye health.' },
 ];
 
 export default function BestProductsSection() {
@@ -34,6 +36,11 @@ export default function BestProductsSection() {
           justify-content: center;
           flex-wrap: wrap;
           gap: 32px;
+        }
+        @media (min-width: 1200px) {
+          .best-products-grid {
+            flex-wrap: nowrap;
+          }
         }
         .flip-card {
           width: 260px;

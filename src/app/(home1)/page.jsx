@@ -1,7 +1,6 @@
 import React from 'react';
 import HeroSection from '../Components/HeroSection';
 import Section from '../Components/Section';
-import CtaSection from '../Components/CtaSection';
 import About from '../Components/About';
 import CounterSection from '../Components/FunSection/CounterSection';
 import Service from '../Components/Service';
@@ -17,7 +16,6 @@ import ErrorBoundary from '../Components/ErrorBoundary';
 import BestProductsSection from '../Components/BestProductsSection';
 import BestTreatmentsSection from '../Components/BestTreatmentsSection';
 import BeforeAfterConsoleSection from '../Components/BeforeAfterConsoleSection';
-import AppsSection from '../Components/AppsSection';
 
 const heroData = {
     primarySlider: [
@@ -66,14 +64,6 @@ const heroData = {
       '/assets/img/hero_slider_sm_2.png',
       '/assets/img/hero_slider_sm_3.png',
     ],
-  };
-  
-  const ctaData = {
-    imageUrl: '/assets/img/cta_img_1.jpg',
-    title: 'Meet The Team Support Medical Service.',
-    subtitle: 'For us, there are no minor aspects, because a quality',
-    buttonUrl: '/appointments',
-    buttonText: 'Booking Now',
   };
   
   const aboutData = {
@@ -453,16 +443,6 @@ const Page = () => {
                 <HeroSection data={heroData} />
                 {/* End Hero Section */}
 
-                {/* Start CTA Section */}
-                <Section
-                    className={
-                        'cs_cta cs_style_1 cs_blue_bg position-relative overflow-hidden'
-                    }
-                >
-                    <CtaSection data={ctaData} />
-                </Section>
-                {/* End CTA Section */}
-
                 {/* Start About Section */}
                 <Section
                     topSpaceLg="80"
@@ -517,7 +497,6 @@ const Page = () => {
 
                 {/* Start Blog Section */}
                 <ContactSection2 />
-                <AppsSection />
                 <Section
                     topSpaceLg="70"
                     topSpaceMd="110"
