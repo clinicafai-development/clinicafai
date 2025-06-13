@@ -499,6 +499,19 @@ const Page = () => {
                 {/* Our Best Treatments Section */}
                 <BestTreatmentsSection />
 
+                {/* Our Team Members Section */}
+                <Section
+                    topSpaceLg="70"
+                    topSpaceMd="110"
+                    className={'cs_team_section position-relative'}
+                >
+                    <TeamSection
+                        hr={true}
+                        variant={'cs_pagination cs_style_2'}
+                        data={teamData}
+                    />
+                </Section>
+
                 {/* 3D Before/After Console Slider Section */}
                 <BeforeAfterConsoleSection />
 
@@ -514,20 +527,6 @@ const Page = () => {
                     <BlogSection data={blogsData} />
                 </Section>
                 {/* End Blog Solution */}
-
-                {/* Start Team Section */}
-                <Section
-                    topSpaceLg="70"
-                    topSpaceMd="110"
-                    className={'cs_team_section position-relative'}
-                >
-                    <TeamSection
-                        hr={true}
-                        variant={'cs_pagination cs_style_2'}
-                        data={teamData}
-                    />
-                </Section>
-                {/* End Team Section */}
 
                 {/* Start Brand Section */}
                 <Section topSpaceLg="70" topSpaceMd="90" className="cs_brands_section">

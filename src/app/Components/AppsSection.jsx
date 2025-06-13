@@ -1,13 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 
 export default function AppsSection() {
-  const [customImg, setCustomImg] = useState(null);
-  const handleImageChange = (e) => {
-    if (e.target.files && e.target.files[0]) {
-      setCustomImg(URL.createObjectURL(e.target.files[0]));
-    }
-  };
   return (
     <section style={{margin: '70px 0'}}>
       <h2 style={{textAlign: 'center', fontWeight: 700, fontSize: 36, marginBottom: 40}}>Our Apps</h2>
@@ -20,15 +14,10 @@ export default function AppsSection() {
           <img src="/assets/img/playstore-app.png" alt="Play Store App" />
           <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" className="store-btn playstore">Play Store</a>
         </div>
-      </div>
-      <div style={{textAlign: 'center', marginTop: 32}}>
-        <label style={{fontWeight: 600, fontSize: 18, marginBottom: 8, display: 'block'}}>Add your app image:</label>
-        <input type="file" accept="image/*" onChange={handleImageChange} />
-        {customImg && (
-          <div style={{marginTop: 24}}>
-            <img src={customImg} alt="Custom App" style={{width: 140, height: 140, borderRadius: 24, boxShadow: '0 2px 8px rgba(0,0,0,0.10)'}} />
-          </div>
-        )}
+        <div className="app-card">
+          <img src="/assets/img/custom-app.png" alt="Custom App" />
+          <span className="store-btn custom">Clinica Fai App</span>
+        </div>
       </div>
       <style jsx>{`
         .apps-flex {
@@ -72,6 +61,11 @@ export default function AppsSection() {
         .playstore {
           background: #00bcd4;
           color: #fff;
+        }
+        .custom {
+          background: #fbc02d;
+          color: #263238;
+          cursor: default;
         }
         .store-btn:hover {
           background: #263238;
