@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import SectionHeading from "./SectionHeading";
 
 const treatments = [
   { name: 'Laser Eye Surgery', img: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=facearea&w=400&q=80', desc: 'Advanced laser procedures for vision correction.' },
@@ -10,7 +11,7 @@ const treatments = [
 export default function BestTreatmentsSection() {
   return (
     <section style={{margin: '70px 0'}}>
-      <h2 style={{textAlign: 'center', fontWeight: 700, fontSize: 36, marginBottom: 40}}>Our Best Treatments</h2>
+      <SectionHeading SectionSubtitle="OUR BEST TREATMENTS" variant="text-center" />
       <div className="best-treatments-grid">
         {treatments.map((treatment, idx) => (
           <div key={idx} className="treatment-card">

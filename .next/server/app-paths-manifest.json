@@ -1,4 +1,4 @@
 {
-  "/(home1)/page": "app/(home1)/page.js",
-  "/(innerpage)/about/credentials/page": "app/(innerpage)/about/credentials/page.js"
+  "/(innerpage)/about/credentials/page": "app/(innerpage)/about/credentials/page.js",
+  "/(home1)/page": "app/(home1)/page.js"
 }

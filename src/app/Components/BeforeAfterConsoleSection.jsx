@@ -30,6 +30,7 @@ const pairs = [
 
 export default function BeforeAfterConsoleSection() {
   const [idx, setIdx] = useState(0);
+  const [hovered, setHovered] = useState({});
   useEffect(() => {
     const timer = setInterval(() => setIdx(i => (i + 2) % pairs.length), 4000);
     return () => clearInterval(timer);
@@ -38,18 +39,34 @@ export default function BeforeAfterConsoleSection() {
   const next = () => setIdx(i => (i + 2) % pairs.length);
   return (
     <section style={{margin: '70px 0'}}>
-      <h2 style={{textAlign: 'center', fontWeight: 700, fontSize: 36, marginBottom: 40}}>3D Before & After Console</h2>
-      <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 24}}>
+      <h2 className="cs_section_heading cs_style_1 text-center">
+        <span className="cs_section_subtitle cs_accent_color">
+          <span className="cs_shape_left" />3D Before & After Console<span className="cs_shape_right" />
+        </span>
+      </h2>
+      <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 32}}>
         <button aria-label="Previous" onClick={prev} style={{fontSize: 32, background: 'none', border: 'none', cursor: 'pointer'}}>&#8592;</button>
         {[0, 1].map(offset => {
           const pair = pairs[(idx + offset) % pairs.length];
+          const key = idx + '-' + offset;
           return (
-            <div key={offset} className="before-after-slider" style={{margin: '0 8px'}}>
-              <div className="before">
+            <div
+              key={offset}
+              className="before-after-slider"
+              style={{margin: '0 16px'}}
+              onMouseLeave={() => setHovered(h => ({ ...h, [key]: null }))}
+            >
+              <div
+                className={`before${hovered[key]==='before' ? ' expanded' : ''}`}
+                onMouseEnter={() => setHovered(h => ({ ...h, [key]: 'before' }))}
+              >
                 <img src={pair.before} alt="Before" />
                 <span className="label before-label">Before</span>
               </div>
-              <div className="after">
+              <div
+                className={`after${hovered[key]==='after' ? ' expanded' : ''}`}
+                onMouseEnter={() => setHovered(h => ({ ...h, [key]: 'after' }))}
+              >
                 <img src={pair.after} alt="After" />
                 <span className="label after-label">After</span>
               </div>
@@ -59,16 +76,17 @@ export default function BeforeAfterConsoleSection() {
         })}
         <button aria-label="Next" onClick={next} style={{fontSize: 32, background: 'none', border: 'none', cursor: 'pointer'}}>&#8594;</button>
       </div>
-      <p style={{textAlign: 'center', color: '#607d8b', marginTop: 24}}>Auto-scrolls every few seconds. Use arrows to see more before and after results.</p>
+      <p style={{textAlign: 'center', color: '#607d8b', marginTop: 24}}>Auto-scrolls every few seconds. Hover left/right to expand. Use arrows to see more before and after results.</p>
       <style jsx>{`
         .before-after-slider {
           position: relative;
-          width: 320px;
-          height: 220px;
-          border-radius: 20px;
+          width: 520px;
+          height: 340px;
+          border-radius: 24px;
           overflow: hidden;
           box-shadow: 0 4px 24px rgba(0,0,0,0.10);
           display: flex;
+          background: #181818;
         }
         .before, .after {
           position: absolute;
@@ -85,6 +103,13 @@ export default function BeforeAfterConsoleSection() {
         .after {
           left: 50%;
           z-index: 1;
+        }
+        .before.expanded {
+          width: 70%;
+        }
+        .after.expanded {
+          width: 70%;
+          left: 30%;
         }
         .before img, .after img {
           width: 100%;

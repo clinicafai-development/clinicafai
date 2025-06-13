@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import SectionHeading from "./SectionHeading";
 
 const products = [
   { name: 'Eye Care Serum', img: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=facearea&w=400&q=80', desc: 'Reduces puffiness and dark circles.' },
@@ -10,7 +11,7 @@ const products = [
 export default function BestProductsSection() {
   return (
     <section style={{margin: '70px 0'}}>
-      <h2 style={{textAlign: 'center', fontWeight: 700, fontSize: 36, marginBottom: 40}}>Our Best Products</h2>
+      <SectionHeading SectionSubtitle="OUR BEST PRODUCTS" variant="text-center" />
       <div className="best-products-grid">
         {products.map((product, idx) => (
           <div key={idx} className="flip-card">
