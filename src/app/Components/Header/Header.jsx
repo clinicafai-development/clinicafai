@@ -25,9 +25,20 @@ const Header = ({ isTopBar, variant }) => {
     logoLink: '/',
     navItems: [
       { label: 'Home', href: '/' },
-      { label: 'Dr. Shubhra Goel', href: '/about' },
-      { label: 'Our Services', href: '/service' },
-      { label: 'Knowledge Center', href: '/blog' },
+      { label: 'Dr. Shubhra Goel', href: '/about', subItems: [
+        { label: 'Credentials', href: '/about/credentials' },
+        { label: 'Mentors', href: '/about/mentors' },
+        { label: 'Patient Experience', href: '/about/patient-experience' },
+      ] },
+      { label: 'Our Services', href: '/service', subItems: [
+        { label: 'Our Treatment', href: '/service/our-treatment' },
+        { label: 'Plexer Pro', href: '/service/plexer-pro' },
+        { label: 'Our Products', href: '/service/our-products' },
+      ] },
+      { label: 'Knowledge Center', href: '/blog', subItems: [
+        { label: 'About Us', href: '/blog/about-us' },
+        { label: 'FAQ', href: '/blog/faq' },
+      ] },
       { label: 'Contact Us', href: '/contact' },
     ],
     btnUrl: '/contact',
@@ -122,7 +133,7 @@ const Header = ({ isTopBar, variant }) => {
           <div className="container">
             <div className="cs_main_header_in">
               <div className="cs_main_header_left">
-                <Link className="cs_site_branding" href={menu.logoLink}>
+                <Link className="cs_site_branding logo-hover" href={menu.logoLink}>
                 <Image src={menu.logoUrl} alt="ClinicaFai - Medical Healthcare Logo" width={205} height={53} priority />
                 </Link>
               </div>
@@ -251,6 +262,15 @@ const Header = ({ isTopBar, variant }) => {
         )}
       </header>
       {isTopBar && <div className="cs_site_header_spacing_150" />}
+      <style jsx>{`
+        .logo-hover {
+          transition: transform 0.3s cubic-bezier(0.4, 0.2, 0.2, 1);
+        }
+        .logo-hover:hover {
+          transform: scale(1.18);
+          z-index: 10;
+        }
+      `}</style>
     </>
   );
 };

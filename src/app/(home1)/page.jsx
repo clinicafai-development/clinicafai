@@ -13,14 +13,19 @@ import CtaSection1 from '../Components/CtaSection/CtaSection1';
 import MedicalTabSection from '../Components/MedicalTabSection';
 import ContactSection2 from '../Components/ContactSection/ContactSection2';
 import BlogSection from '../Components/BlogsSection';
+import ErrorBoundary from '../Components/ErrorBoundary';
+import BestProductsSection from '../Components/BestProductsSection';
+import BestTreatmentsSection from '../Components/BestTreatmentsSection';
+import BeforeAfterConsoleSection from '../Components/BeforeAfterConsoleSection';
+import AppsSection from '../Components/AppsSection';
 
 const heroData = {
     primarySlider: [
       {
-        bgImageUrl: '/assets/img/hero_slider_3.jpg',
-        title: 'We Hospital Doctors Patients <span>Service.</span>',
+        bgImageUrl: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/landingpagepicture1//golden-hour-beauty-stockcake.jpg',
+        title: 'Time to Choose <span>You</span>',
         contactSubtitle:
-          'Medical ers piciatis unde omnis iste natus this the word medical this mountains, far from the countries Vokalia and, live the docor white teeth sitting on a dental for best medical.',
+          "We're here to remind you that choosing yourself is strength. Feel empowered, nurtured, and fully yourself.",
         contactTitle: 'Receive Medical Service.',
         contact: 'Call Us at: (+2) 56 54 1453',
         btnText1: 'Contact Now',
@@ -75,9 +80,9 @@ const heroData = {
     sectionSubtitle: 'OUR ABOUT US',
     sectionTitle: 'More Than 26+ Years About Provide Medical.',
     aboutText:
-      'We are privileged to work with hundreds of future-thinking medial, including many of the world’s top hardware, software, and brands, feel safe and comfortable in establishing.',
+      "We are privileged to work with hundreds of future-thinking medial, including many of the world's top hardware, software, and brands, feel safe and comfortable in establishing.",
     service:
-      "There are many variations of pass available this medical service the team <a href='#''>READ MORE +</a>",
+      "There are many variations of pass available this medical service the team <a href='#'>READ MORE +</a>",
     experienceYears: '26+',
     experienceTitle: 'Experience',
     videoUrl: 'https://www.youtube.com/embed/rRid6GCJtgc',
@@ -94,11 +99,10 @@ const heroData = {
         subtitle: 'But must explain to you medical of and pain was.',
       },
     ],
-  
     btnUrl: '/about',
     btnText: 'About More',
-    sectionImgUrl: '/assets/img/about_section_img_1.png',
-    headImgUrl: '/assets/img/about_img_1.jpg',
+    sectionImgUrl: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/drshubhralandingpage//NEW-doc-image.png',
+    headImgUrl: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/drshubhralandingpage1//drpic-1.jpg',
   };
   
   const countersData = [
@@ -127,8 +131,7 @@ const heroData = {
   const serviceData = {
     subtitle: 'OUR BEST SERVICE',
     title: 'High-Quality Services This Doctor',
-    description:
-      'We are privileged to work with hundreds of future-thinking medial,<br> including many of the world’s top hardware, software, and<br> brands, feel safe and comfortable in establishing.',
+    description: "We are privileged to work with hundreds of future-thinking medial,<br> including many of the world's top hardware, software, and<br> brands, feel safe and comfortable in establishing.",
     services: [
       {
         backgroundImage: '/assets/img/service_bg.jpg',
@@ -197,7 +200,7 @@ const heroData = {
     ],
     footerIcon: '/assets/img/icons/service_footer_icon_1.png',
     footerText:
-      'Delivering tomorrow’s health care for your family.<br>medical this View',
+      "Delivering tomorrow's health care for your family.<br>medical this View",
     footerLink: '/',
     footerLinkText: 'SEE MORE',
   };
@@ -309,119 +312,14 @@ const heroData = {
     title: 'All The Great Work That<br> Medical Service',
     subtitle: 'OUR PORTFOLIO',
     description:
-      'We are privileged to work with hundreds of future-thinking medial, including many of the world’s top hardware, software, and brands, feel safe and comfortable in establishing.',
+      'We are privileged to work with hundreds of future-thinking medial, including many of the world\'s top hardware, software, and brands, feel safe and comfortable in establishing.',
     tabs: [
       { id: 'dental', label: 'Dental' },
       { id: 'cardiology', label: 'Cardiology' },
       { id: 'neurology', label: 'Neurology' },
       { id: 'medical', label: 'Medical' },
     ],
-    tabData: [
-      {
-        id: 'dental',
-        items: [
-          {
-            imgUrl: '/assets/img/project_1.jpg',
-            title: 'Medical Of Working',
-            subtitle:
-              'We businesss standard chunk of Ipsum used since is Agency &amp; Star tup.',
-            index: 1,
-          },
-          {
-            imgUrl: '/assets/img/project_2.jpg',
-            title: 'Medical Of Dental',
-            subtitle:
-              'We businesss standard chunk of Ipsum used since is Agency &amp; Star tup.',
-            index: 2,
-          },
-          {
-            imgUrl: '/assets/img/project_3.jpg',
-            title: 'Laboratory Technologist',
-            subtitle:
-              'We businesss standard chunk of Ipsum used since is Agency &amp; Star tup.',
-            index: 3,
-          },
-        ],
-      },
-      {
-        id: 'cardiology',
-        items: [
-          {
-            imgUrl: '/assets/img/project_1.jpg',
-            title: 'Medical Of Working',
-            subtitle:
-              'We businesss standard chunk of Ipsum used since is Agency &amp; Star tup.',
-            index: 1,
-          },
-          {
-            imgUrl: '/assets/img/project_3.jpg',
-            title: 'Laboratory Technologist',
-            subtitle:
-              'We businesss standard chunk of Ipsum used since is Agency &amp; Star tup.',
-            index: 3,
-          },
-          {
-            imgUrl: '/assets/img/project_2.jpg',
-            title: 'Medical Of Dental',
-            subtitle:
-              'We businesss standard chunk of Ipsum used since is Agency &amp; Star tup.',
-            index: 2,
-          },
-        ],
-      },
-      {
-        id: 'neurology',
-        items: [
-          {
-            imgUrl: '/assets/img/project_1.jpg',
-            title: 'Medical Of Working',
-            subtitle:
-              'We businesss standard chunk of Ipsum used since is Agency &amp; Star tup.',
-            index: 1,
-          },
-          {
-            imgUrl: '/assets/img/project_3.jpg',
-            title: 'Medical Of Working',
-            subtitle:
-              'We businesss standard chunk of Ipsum used since is Agency &amp; Star tup.',
-            index: 1,
-          },
-          {
-            imgUrl: '/assets/img/project_2.jpg',
-            title: 'Medical Of Working',
-            subtitle:
-              'We businesss standard chunk of Ipsum used since is Agency &amp; Star tup.',
-            index: 1,
-          },
-        ],
-      },
-      {
-        id: 'medical',
-        items: [
-          {
-            imgUrl: '/assets/img/project_3.jpg',
-            title: 'Medical Of Working',
-            subtitle:
-              'We businesss standard chunk of Ipsum used since is Agency &amp; Star tup.',
-            index: 1,
-          },
-          {
-            imgUrl: '/assets/img/project_2.jpg',
-            title: 'Medical Of Working',
-            subtitle:
-              'We businesss standard chunk of Ipsum used since is Agency &amp; Star tup.',
-            index: 1,
-          },
-          {
-            imgUrl: '/assets/img/project_1.jpg',
-            title: 'Medical Of Working',
-            subtitle:
-              'We businesss standard chunk of Ipsum used since is Agency &amp; Star tup.',
-            index: 1,
-          },
-        ],
-      },
-    ],
+    tabData: [],
   };
   
   const ctaData1 = {
@@ -430,7 +328,7 @@ const heroData = {
     subtitle: 'OUR WATCH VIDEO',
     title: 'Professional Medical Care Measure Medical.',
     description:
-      'We are privileged to work with hundreds of future-thinking medial, including many of the world’s top hardware, software, and brands , feel safe and comfortable in establishing.',
+      'We are privileged to work with hundreds of future-thinking medial, including many of the world\'s top hardware, software, and brands, feel safe and comfortable in establishing.',
     buttonLink: '/contact',
     buttonText: 'Video More',
     brandImage: '/assets/img/medical_brand.png',
@@ -467,7 +365,7 @@ const heroData = {
         imageSrc: '/assets/img/offerings03.jpg',
         title: 'We are here to hear and heal your',
         subtitle:
-          'We are privileged to work with hundreds of future-thinking medial, including many of the world’s top hardware, software, and brands , feel safe and comfortable in establishing.',
+          'We are privileged to work with hundreds of future-thinking medial, including many of the world\'s top hardware, software, and brands, feel safe and comfortable in establishing.',
         points: [
           {
             icon: '/assets/img/icons/check_icon_1.png',
@@ -486,7 +384,7 @@ const heroData = {
         imageSrc: '/assets/img/offerings02.jpg',
         title: 'Treatment patients in primary care',
         subtitle:
-          'We are privileged to work with hundreds of future-thinking medical, including many of the world’s top hardware, software, and brands, feel safe and comfortable in establishing.',
+          'We are privileged to work with hundreds of future-thinking medical, including many of the world\'s top hardware, software, and brands, feel safe and comfortable in establishing.',
         points: [
           {
             icon: '/assets/img/icons/check_icon_1.png',
@@ -505,7 +403,7 @@ const heroData = {
         imageSrc: '/assets/img/offerings01.jpg',
         title: 'Accreditation within a given specialty',
         subtitle:
-          'We are privileged to work with hundreds of future-thinking medical, including many of the world’s top hardware, software, and brands, feel safe and comfortable in establishing.',
+          'We are privileged to work with hundreds of future-thinking medical, including many of the world\'s top hardware, software, and brands, feel safe and comfortable in establishing.',
         points: [
           {
             icon: '/assets/img/icons/check_icon_1.png',
@@ -524,7 +422,7 @@ const heroData = {
         imageSrc: '/assets/img/offerings04.jpg',
         title: 'Better Health While Aging health',
         subtitle:
-          'We are privileged to work with hundreds of future-thinking medical, including many of the world’s top hardware, software, and brands, feel safe and comfortable in establishing.',
+          'We are privileged to work with hundreds of future-thinking medical, including many of the world\'s top hardware, software, and brands, feel safe and comfortable in establishing.',
         points: [
           {
             icon: '/assets/img/icons/check_icon_1.png',
@@ -538,193 +436,146 @@ const heroData = {
         linkHref: '/contact',
         buttonText: 'Read More',
       },
-      // Add other tab data here
     ],
   };
   
   const blogsData = {
     sectionTitle: 'OUR LARGEST BLOG',
     sectionSubtitle: 'Latest Posts &amp; Articles',
-    postsData: [
-      {
-        title: 'Medical Of This Working Health Blog',
-        subtitle:
-          'Medical standard chunk ofI nibh velit auctor aliquet sollic tudin.',
-        date: 'May 02',
-        category: 'Medical',
-        author: 'Admin',
-        thumbnail: '/assets/img/post_1.jpeg',
-        btnText: 'Read More',
-        postLink: '/blog/blog-details',
-        authorIcon: '/assets/img/icons/post_user_icon.png',
-        commentIcon: '/assets/img/icons/post_comment_icon.png',
-      },
-      {
-        title: 'There Is Only One Thing That Is Hospital.',
-        subtitle:
-          'Medical standard chunk ofI nibh velit auctor aliquet sollic tudin.',
-        date: 'May 02',
-        category: 'Medical',
-        author: 'Admin',
-        thumbnail: '/assets/img/post_2.jpeg',
-        btnText: 'Read More',
-        postLink: '/blog/blog-details',
-        authorIcon: '/assets/img/icons/post_user_icon.png',
-        commentIcon: '/assets/img/icons/post_comment_icon.png',
-      },
-      {
-        title: 'This Working World and Infection Prevention.',
-        subtitle:
-          'Medical standard chunk ofI nibh velit auctor aliquet sollic tudin.',
-        date: 'May 02',
-        category: 'Medical',
-        author: 'Admin',
-        thumbnail: '/assets/img/post_3.jpeg',
-        btnText: 'Read More',
-        postLink: '/blog/blog-details',
-        authorIcon: '/assets/img/icons/post_user_icon.png',
-        commentIcon: '/assets/img/icons/post_comment_icon.png',
-      },
-      {
-        title: 'Medical Of This Working Health Blog',
-        subtitle:
-          'Medical standard chunk ofI nibh velit auctor aliquet sollic tudin.',
-        date: 'May 02',
-        category: 'Medical',
-        author: 'Admin',
-        thumbnail: '/assets/img/post_1.jpeg',
-        btnText: 'Read More',
-        postLink: '/blog/blog-details',
-        authorIcon: '/assets/img/icons/post_user_icon.png',
-        commentIcon: '/assets/img/icons/post_comment_icon.png',
-      },
-    ],
+    postsData: [],
   };
 
-const page = () => {
+const Page = () => {
     return (
-        <div>
-        {/* Start Hero Section */}
-        <HeroSection data={heroData} />
-        {/* End Hero Section */}
+        <ErrorBoundary>
+            <div>
+                {/* Start Hero Section */}
+                <HeroSection data={heroData} />
+                {/* End Hero Section */}
 
-      {/* Start CTA Section */}
-      <Section
-        className={
-          'cs_cta cs_style_1 cs_blue_bg position-relative overflow-hidden'
-        }
-      >
-        <CtaSection data={ctaData} />
-      </Section>
+                {/* Start CTA Section */}
+                <Section
+                    className={
+                        'cs_cta cs_style_1 cs_blue_bg position-relative overflow-hidden'
+                    }
+                >
+                    <CtaSection data={ctaData} />
+                </Section>
+                {/* End CTA Section */}
 
-      {/* End CTA Section */}
+                {/* Start About Section */}
+                <Section
+                    topSpaceLg="80"
+                    topSpaceMd="120"
+                    bottomSpaceLg="80"
+                    bottomSpaceMd="120"
+                    className="cs_about cs_style_1 position-relative"
+                >
+                    <About data={aboutData} />
+                </Section>
+                {/* End About Section */}
 
-      {/* Start About Section */}
-      <Section
-        topSpaceLg="80"
-        topSpaceMd="120"
-        bottomSpaceLg="80"
-        bottomSpaceMd="120"
-        className="cs_about cs_style_1 position-relative"
-      >
-        <About data={aboutData} />
-      </Section>
-      {/* End About Section */}
+                {/* Start Counter */}
+                <Section className="cs_counter_area cs_gray_bg">
+                    <CounterSection data={countersData} />
+                </Section>
+                {/* End Counter */}
 
-      {/* Start Counter */}
-      <Section className="cs_counter_area cs_gray_bg">
-        <CounterSection data={countersData} />
-      </Section>
-      {/* End Counter */}
+                {/* Start Service Section */}
+                <Section
+                    topSpaceLg="70"
+                    topSpaceMd="110"
+                    bottomSpaceLg="80"
+                    bottomSpaceMd="120"
+                    className={'cs_gray_bg'}
+                >
+                    <Service cardBg={'cs_gray_bg'} data={serviceData} />
+                </Section>
+                {/* End Service Section */}
 
-      {/* Start Service Section */}
-      <Section
-        topSpaceLg="70"
-        topSpaceMd="110"
-        bottomSpaceLg="80"
-        bottomSpaceMd="120"
-        className={'cs_gray_bg'}
-      >
-        <Service cardBg={'cs_gray_bg'} data={serviceData} />
-      </Section>
-      {/* End Service Section */}
+                {/* Our Best Products Section */}
+                <BestProductsSection />
 
-      {/* Start Team Section */}
-      <Section
-        topSpaceLg="70"
-        topSpaceMd="110"
-        className={'cs_team_section position-relative'}
-      >
-        <TeamSection
-          hr={true}
-          variant={'cs_pagination cs_style_2'}
-          data={teamData}
-        />
-      </Section>
-      {/* End Team Section */}
+                {/* Our Best Treatments Section */}
+                <BestTreatmentsSection />
 
-      {/* Start Brand Section */}
-      <Section topSpaceLg="70" topSpaceMd="90" className="cs_brands_section">
-        <BrandsSlider data={brandData} />
-      </Section>
+                {/* 3D Before/After Console Slider Section */}
+                <BeforeAfterConsoleSection />
 
-      {/* End Brand Section */}
+                {/* Start Blog Section */}
+                <ContactSection2 />
+                <AppsSection />
+                <Section
+                    topSpaceLg="70"
+                    topSpaceMd="110"
+                    bottomSpaceLg="80"
+                    bottomSpaceMd="120"
+                >
+                    <BlogSection data={blogsData} />
+                </Section>
+                {/* End Blog Solution */}
 
-      {/* Start Why Choose Us Section */}
-      <Section
-        topSpaceLg="70"
-        topSpaceMd="110"
-        bottomSpaceLg="80"
-        bottomSpaceMd="120"
-        className="cs_gray_bg cs_bg_filed"
-        backgroundImage="/assets/img/service_bg_2.jpg"
-      >
-        <ChooseUs data={sectionData} />
-      </Section>
-      {/* End Why Choose Us Section */}
+                {/* Start Team Section */}
+                <Section
+                    topSpaceLg="70"
+                    topSpaceMd="110"
+                    className={'cs_team_section position-relative'}
+                >
+                    <TeamSection
+                        hr={true}
+                        variant={'cs_pagination cs_style_2'}
+                        data={teamData}
+                    />
+                </Section>
+                {/* End Team Section */}
 
-      {/* Start Projects Section */}
-      <Section topSpaceLg="70" topSpaceMd="110" className="cs_tabs">
-        <ProjectSection data={projectData} />
-      </Section>
-      {/* End Projects Section */}
+                {/* Start Brand Section */}
+                <Section topSpaceLg="70" topSpaceMd="90" className="cs_brands_section">
+                    <BrandsSlider data={brandData} />
+                </Section>
 
-      {/* Start CTA Section */}
-      <Section
-        topSpaceLg="70"
-        topSpaceMd="110"
-        bottomSpaceLg="80"
-        bottomSpaceMd="120"
-        className="cs_cta cs_style_2 cs_blue_bg cs_bg_filed cs_center"
-        backgroundImage="/assets/img/cta_bg_1.jpeg"
-      >
-        <CtaSection1 data={ctaData1} />
-      </Section>
-      {/* End CTA Section */}
+                {/* End Brand Section */}
 
-      {/* Start Medical Tab Section */}
-      <Section topSpaceLg="70" topSpaceMd="110">
-        <MedicalTabSection data={medicalTabsData} />
-      </Section>
-      {/* End Medical Tab Section */}
+                {/* Start Why Choose Us Section */}
+                <Section
+                    topSpaceLg="70"
+                    topSpaceMd="110"
+                    bottomSpaceLg="80"
+                    bottomSpaceMd="120"
+                    className="cs_gray_bg cs_bg_filed"
+                    backgroundImage="/assets/img/service_bg_2.jpg"
+                >
+                    <ChooseUs data={sectionData} />
+                </Section>
+                {/* End Why Choose Us Section */}
 
-      {/* Start Contact Solution */}
-      <ContactSection2></ContactSection2>
-      {/* End Contact Solution */}
+                {/* Start Projects Section */}
+                <Section topSpaceLg="70" topSpaceMd="110" className="cs_tabs">
+                    <ProjectSection data={projectData} />
+                </Section>
+                {/* End Projects Section */}
 
-      {/* Start Blog Section */}
-      <Section
-        topSpaceLg="70"
-        topSpaceMd="110"
-        bottomSpaceLg="80"
-        bottomSpaceMd="120"
-      >
-        <BlogSection data={blogsData} />
-      </Section>
-      {/* End Blog Solution */}
+                {/* Start CTA Section */}
+                <Section
+                    topSpaceLg="70"
+                    topSpaceMd="110"
+                    bottomSpaceLg="80"
+                    bottomSpaceMd="120"
+                    className="cs_cta cs_style_2 cs_blue_bg cs_bg_filed cs_center"
+                    backgroundImage="/assets/img/cta_bg_1.jpeg"
+                >
+                    <CtaSection1 data={ctaData1} />
+                </Section>
+                {/* End CTA Section */}
 
-        </div>
+                {/* Start Medical Tab Section */}
+                <Section topSpaceLg="70" topSpaceMd="110">
+                    <MedicalTabSection data={medicalTabsData} />
+                </Section>
+                {/* End Medical Tab Section */}
+            </div>
+        </ErrorBoundary>
     );
 };
 
-export default page;
+export default Page;

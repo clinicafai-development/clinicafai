@@ -1,3 +1,4 @@
+"use client"
 import Spacing from "../Spacing";
 
 export default function Section({

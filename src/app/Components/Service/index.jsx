@@ -1,3 +1,4 @@
+"use client"
 import { FaAngleDoubleRight } from 'react-icons/fa';
 import SectionHeading from '../SectionHeading';
 import Link from 'next/link';
