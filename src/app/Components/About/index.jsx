@@ -29,7 +29,7 @@ const About = ({ data }) => {
               <div className="flip-card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
-                    <Image src={data.sectionImgUrl} alt="Front Image" width={444} height={505} />
+                    <Image src="https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/dr-image//top10women-pic-1.jpg" alt="Front Image" width={444} height={505} />
                   </div>
                   <div className="flip-card-back">
                     <Image src={data.headImgUrl} alt="Back Image" width={444} height={505} />
@@ -77,7 +77,7 @@ const About = ({ data }) => {
                 <span className="cs_player_btn cs_center">
                   <span />
                 </span>
-                <span className="cs_about_play_btn_text">
+                <span className="cs_about_play_btn_text cs_white_color">
                   {data.videoText}
                 </span>
               </a>

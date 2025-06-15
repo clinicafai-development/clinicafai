@@ -65,18 +65,20 @@ const heroData = {
       '/assets/img/hero_slider_sm_3.png',
     ],
   };
+
+  
   
   const aboutData = {
     sectionSubtitle: 'OUR ABOUT US',
-    sectionTitle: 'More Than 26+ Years About Provide Medical.',
+    sectionTitle: 'Dr. Shubhra Goel',
     aboutText:
-      "We are privileged to work with hundreds of future-thinking medial, including many of the world's top hardware, software, and brands, feel safe and comfortable in establishing.",
+      "An industry-recognized award-winning celebrity oculofacial aesthetic surgeon with over 15 years of global experience, leads our team of specialists.",
     service:
       "There are many variations of pass available this medical service the team <a href='#'>READ MORE +</a>",
     experienceYears: '26+',
     experienceTitle: 'Experience',
-    videoUrl: 'https://www.youtube.com/embed/rRid6GCJtgc',
-    videoText: 'How We Work',
+    videoUrl: 'https://www.youtube.com/watch?v=r-N7F6zpK6o',
+    videoText: 'Watch us on Youtube',
     iconboxes: [
       {
         imgUrl: '/assets/img/icons/about_icon_1.png',
@@ -99,28 +101,28 @@ const heroData = {
     {
       iconUrl: '/assets/img/icons/counter_icon_1.png',
       number: '567+',
-      title: 'Active Clients',
+      title: 'Years of Experinces',
     },
     {
       iconUrl: '/assets/img/icons/counter_icon_2.png',
       number: '23K+',
-      title: 'Team Support',
+      title: 'Happy Patients',
     },
     {
       iconUrl: '/assets/img/icons/counter_icon_3.png',
       number: '241+',
-      title: 'Projects Complete',
+      title: 'Treatment',
     },
     {
       iconUrl: '/assets/img/icons/counter_icon_4.png',
       number: '16K+',
-      title: 'Award Winner',
+      title: 'Services',
     },
   ];
   
   const serviceData = {
     subtitle: 'OUR BEST SERVICE',
-    title: 'High-Quality Services This Doctor',
+    title: 'Explore All Our Treatments',
     description: "We are privileged to work with hundreds of future-thinking medial,<br> including many of the world's top hardware, software, and<br> brands, feel safe and comfortable in establishing.",
     services: [
       {
@@ -443,6 +445,15 @@ const Page = () => {
                 <HeroSection data={heroData} />
                 {/* End Hero Section */}
 
+                {/* Start Counter */}
+                <Section className="cs_counter_area cs_gray_bg">
+                    <CounterSection data={countersData} />
+                </Section>
+                {/* End Counter */}
+
+                {/* Our Best Treatments Section */}
+                <BestTreatmentsSection />
+
                 {/* Start About Section */}
                 <Section
                     topSpaceLg="80"
@@ -454,12 +465,6 @@ const Page = () => {
                     <About data={aboutData} />
                 </Section>
                 {/* End About Section */}
-
-                {/* Start Counter */}
-                <Section className="cs_counter_area cs_gray_bg">
-                    <CounterSection data={countersData} />
-                </Section>
-                {/* End Counter */}
 
                 {/* Start Service Section */}
                 <Section
@@ -475,9 +480,6 @@ const Page = () => {
 
                 {/* Our Best Products Section */}
                 <BestProductsSection />
-
-                {/* Our Best Treatments Section */}
-                <BestTreatmentsSection />
 
                 {/* Our Team Members Section */}
                 <Section

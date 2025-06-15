@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="author" content="Themeservices" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/logo//Logo.png" sizes="any" />
       </head>
       <body className={`${rubik.variable} ${poppins.variable}`}>
         {children}
