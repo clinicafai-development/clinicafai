@@ -126,7 +126,7 @@ const heroData = {
     description: "We are privileged to treat thousands of patients who place their trust in us and their skin—each patient looking for confidence, clarity, and quality care. From cutting-edge dermatological therapies to personalized aesthetic treatments, we marry scientific precision to a keen sense of beauty. Our clinic is a reliable haven where science and elegance converge, and where your skin is always in the hands of experts.",
     services: [
       {
-        backgroundImage: '/assets/img/service_bg.jpg',
+        backgroundImage: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/ourservices//Acne.jpg',
         iconUrl: '/assets/img/icons/service_icon_1.png',
         index: '01',
         title: 'Acne',
@@ -134,7 +134,7 @@ const heroData = {
         link: '/service/service-details',
       },
       {
-        backgroundImage: '/assets/img/service_bg.jpg',
+        backgroundImage: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/ourservices//dark%20circle.png',
         iconUrl: '/assets/img/icons/service_icon_2.png',
         index: '02',
         title: 'Dark Circles',
@@ -142,7 +142,7 @@ const heroData = {
         link: '/service/service-details',
       },
       {
-        backgroundImage: '/assets/img/service_bg.jpg',
+        backgroundImage: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/ourservices//skin%20hydration.jpg',
         iconUrl: '/assets/img/icons/service_icon_3.png',
         index: '03',
         title: 'Skin Hydration',
@@ -150,7 +150,7 @@ const heroData = {
         link: '/service/service-details',
       },
       {
-        backgroundImage: '/assets/img/service_bg.jpg',
+        backgroundImage: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/ourservices//chemical%20peel.png',
         iconUrl: '/assets/img/icons/service_icon_4.png',
         index: '04',
         title: 'Chemical Peels',
@@ -158,7 +158,7 @@ const heroData = {
         link: '/service/service-details',
       },
       {
-        backgroundImage: '/assets/img/service_bg.jpg',
+        backgroundImage: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/ourservices//daily%20skin%20care.png',
         iconUrl: '/assets/img/icons/service_icon_5.png',
         index: '05',
         title: 'Daily Skin Care Program',
@@ -166,7 +166,7 @@ const heroData = {
         link: '/service/service-details',
       },
       {
-        backgroundImage: '/assets/img/service_bg.jpg',
+        backgroundImage: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/ourservices//Cellulite.jpg',
         iconUrl: '/assets/img/icons/service_icon_6.png',
         index: '06',
         title: 'Anti-Cellulite Treatment',
@@ -174,7 +174,7 @@ const heroData = {
         link: '/service/service-details',
       },
       {
-        backgroundImage: '/assets/img/service_bg.jpg',
+        backgroundImage: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/ourservices//pigmentation.png',
         iconUrl: '/assets/img/icons/service_icon_7.png',
         index: '07',
         title: 'Pigmentation And Texture Repair',
@@ -182,7 +182,7 @@ const heroData = {
         link: '/service/service-details',
       },
       {
-        backgroundImage: '/assets/img/service_bg.jpg',
+        backgroundImage: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/ourservices//cheek%20hollowness.png',
         iconUrl: '/assets/img/icons/service_icon_8.png',
         index: '08',
         title: 'Cheek Hollowness and Smile Folds',

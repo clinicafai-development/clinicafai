@@ -3865,15 +3865,27 @@ label {
   font-size: 14px;
 }
 .cs_social_btns.cs_style_1 a {
-  background-color: #475f8d;
+  background: linear-gradient(135deg, #D4AF37 0%, #C5A028 100%);
   height: 30px;
   width: 30px;
   color: #fff;
   border-radius: 50%;
+  transition: all 0.4s ease;
+  border: 1px solid #D4AF37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cs_social_btns.cs_style_1 a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cs_social_btns.cs_style_1 a:hover {
-  background-color: #fff;
-  color: var(--accent-color);
+  background: #fff;
+  color: #D4AF37;
+  border-color: #D4AF37;
+  transform: translateY(-3px);
 }
 
 .cs_brand.cs_style_1 {
@@ -5610,6 +5622,14 @@ i {
   box-shadow: 0px 4px 20px var(--shadow-color);
   font-size: 16px;
   transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cs_footer .cs_social_btns.cs_style_1 a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cs_footer .cs_social_btns.cs_style_1 a:hover {
   background: var(--primary-gradient);
@@ -6339,6 +6359,26 @@ i {
 .cs_iconbox.cs_style_2.cs_gray_bg {
   background-color: var(--gray-color);
 }
+.cs_iconbox.cs_style_2 .cs_iconbox_overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: all 0.4s ease;
+  background-size: cover;
+  background-position: center;
+}
+.cs_iconbox.cs_style_2 .cs_iconbox_overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
 .cs_iconbox.cs_style_2 .iconbox_index {
   color: var(--blue-color);
   -webkit-text-stroke: 1px var(--white);
@@ -6347,12 +6387,13 @@ i {
   line-height: 1.5em;
   position: relative;
   z-index: 1;
-  opacity: 0;
+  opacity: 1;
 }
 .cs_iconbox.cs_style_2 .cs_iconbox_icon {
   width: 53px;
   height: 53px;
   position: relative;
+  z-index: 2;
 }
 .cs_iconbox.cs_style_2 .cs_iconbox_icon img {
   position: relative;
@@ -6384,37 +6425,14 @@ i {
   transition: all 0.4s ease;
 }
 .cs_iconbox.cs_style_2 .cs_iconbox_title {
-  font-size: 22px;
-  margin-top: 15px;
-  margin-bottom: 5px;
   position: relative;
-  z-index: 1;
-  transition: all 0.4s ease;
+  z-index: 2;
+  color: var(--white);
 }
 .cs_iconbox.cs_style_2 .cs_iconbox_subtitle {
   position: relative;
-  z-index: 1;
-  transition: all 0.4s ease;
-}
-.cs_iconbox.cs_style_2 .cs_iconbox_overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  transition: all 0.4s ease;
-}
-.cs_iconbox.cs_style_2 .cs_iconbox_overlay::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: var(--blue-color);
-  opacity: 0.8;
-  transition: all 0.4s ease;
+  z-index: 2;
+  color: var(--white);
 }
 .cs_iconbox.cs_style_2 .cs_iconbox_shape {
   width: 56px;
@@ -8285,6 +8303,14 @@ i {
 .cs_team.cs_style_1 .cs_social_btns.cs_style_1 a {
   background-color: var(--white);
   color: var(--blue-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cs_team.cs_style_1 .cs_social_btns.cs_style_1 a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cs_team.cs_style_1 .cs_social_btns.cs_style_1 a:hover {
   background-color: var(--accent-color);

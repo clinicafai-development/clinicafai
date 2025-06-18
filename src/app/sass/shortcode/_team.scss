@@ -60,6 +60,15 @@
   .cs_social_btns.cs_style_1 a {
     background-color: var(--white);
     color: var(--blue-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     &:hover {
       background-color: var(--accent-color);

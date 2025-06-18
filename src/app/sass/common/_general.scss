@@ -1556,15 +1556,28 @@ label {
   font-size: 14px;
 
   a {
-    background-color: #475f8d;
+    background: linear-gradient(135deg, #D4AF37 0%, #C5A028 100%);
     height: 30px;
     width: 30px;
     color: #fff;
     border-radius: 50%;
+    transition: all 0.4s ease;
+    border: 1px solid #D4AF37;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     &:hover {
-      background-color: #fff;
-      color: var(--accent-color);
+      background: #fff;
+      color: #D4AF37;
+      border-color: #D4AF37;
+      transform: translateY(-3px);
     }
   }
 }
