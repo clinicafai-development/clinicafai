@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaChevronCircleRight } from "react-icons/fa";
+import { FaCircleChevronRight } from "react-icons/fa6";
 
 const ProjectsSection1 = ({ data }) => {
   return (
@@ -45,7 +45,7 @@ const ProjectsSection1 = ({ data }) => {
                   </div>
                   <Link href={project.link} className="cs_iconbox_btn cs_center">
                     <i>
-                      <FaChevronCircleRight />
+                      <FaCircleChevronRight />
                     </i>
                   </Link>
                 </div>

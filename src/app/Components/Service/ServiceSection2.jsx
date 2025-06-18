@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaChevronCircleRight } from "react-icons/fa";
+import { FaCircleChevronRight } from "react-icons/fa6";
 
 const ServiceSection2 = ({ data }) => {
   return (
@@ -39,7 +39,7 @@ const ServiceSection2 = ({ data }) => {
                 ></p>
                 <Link href={service.link} className="cs_iconbox_btn cs_center">
                   <i>
-                    <FaChevronCircleRight />
+                    <FaCircleChevronRight />
                   </i>
                 </Link>
                 <div className="cs_iconbox_thumbnail position-absolute">

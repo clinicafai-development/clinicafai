@@ -2,10 +2,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import {
-  FaEnvelope,
-  FaLocationDot,
-} from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa';
+import { FaLocationDot } from 'react-icons/fa6';
 import { FaAnglesRight } from 'react-icons/fa6';
 import { HiMiniMagnifyingGlass } from 'react-icons/hi2';
 import SocialIcons from '../SocialIcons';

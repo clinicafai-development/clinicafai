@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaCalendarAlt, FaChevronCircleRight } from "react-icons/fa";
+import { FaCalendarAlt } from "react-icons/fa";
+import { FaCircleChevronRight } from "react-icons/fa6";
 import { FaArrowRightLong, FaMagnifyingGlass } from "react-icons/fa6";
 
 const BlogsRight = ({ data }) => {
@@ -39,7 +40,7 @@ const BlogsRight = ({ data }) => {
               </p>
               <Link href={data.service.link} className="cs_iconbox_btn cs_center">
                 <i>
-                  <FaChevronCircleRight />
+                                      <FaCircleChevronRight />
                 </i>
               </Link>
             </div>

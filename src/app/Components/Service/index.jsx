@@ -1,5 +1,5 @@
 "use client"
-import { FaAngleDoubleRight } from 'react-icons/fa';
+import { FaAnglesRight } from 'react-icons/fa6';
 import SectionHeading from '../SectionHeading';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -54,7 +54,7 @@ const Service = ({ data, cardBg }) => {
               {data.footerLinkText}
               <span>
                 <i>
-                  <FaAngleDoubleRight />
+                  <FaAnglesRight />
                 </i>
               </span>
             </Link>

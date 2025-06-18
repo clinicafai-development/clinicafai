@@ -1,6 +1,6 @@
 import Link from "next/link";
 import SectionHeading from "../SectionHeading";
-import { FaAngleRight } from "react-icons/fa";
+import { FaAngleRight } from "react-icons/fa6";
 import Image from "next/image";
 
 const BlogsSection1 = ({ data }) => {

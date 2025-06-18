@@ -1,5 +1,5 @@
 "use client"
-import { FaChevronCircleRight } from "react-icons/fa";
+import { FaCircleChevronRight } from "react-icons/fa6";
 import Slider from "react-slick";
 import SectionHeading from "../SectionHeading";
 import Link from "next/link";
@@ -72,7 +72,7 @@ const ProcessSection = ({ data }) => {
                       </div>
                       <Link href={slide.link} className="cs_card_btn cs_center">
                         <i>
-                          <FaChevronCircleRight />
+                          <FaCircleChevronRight />
                         </i>
                       </Link>
                     </div>
