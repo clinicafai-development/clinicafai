@@ -1,14 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { BsTwitter } from 'react-icons/bs';
 import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import {
-  FaFacebookF,
-  FaInstagram,
   FaLocationDot,
-  FaPinterestP,
   FaRegClock,
 } from 'react-icons/fa6';
+import SocialIcons from '../SocialIcons';
 
 const data = {
   backgroundImage: 'assets/img/footer_bg.jpg',
@@ -209,28 +206,7 @@ const Footer = () => {
                   </Link>
                 </li>
               </ul>
-              <div className="cs_social_btns cs_style_1">
-                <Link href={data.facebookHref} className="cs_center">
-                  <i>
-                    <FaFacebookF />
-                  </i>
-                </Link>
-                <Link href={data.pinterestHref} className="cs_center">
-                  <i>
-                    <FaPinterestP />
-                  </i>
-                </Link>
-                <Link href={data.twitterHref} className="cs_center">
-                  <i>
-                    <BsTwitter />
-                  </i>
-                </Link>
-                <Link href={data.instagramHref} className="cs_center">
-                  <i>
-                    <FaInstagram />
-                  </i>
-                </Link>
-              </div>
+              <SocialIcons />
             </div>
           </div>
 

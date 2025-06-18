@@ -1,15 +1,10 @@
 'use client';
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaPinterestP,
-  FaTwitter,
-} from "react-icons/fa";
 import Slider from "react-slick";
 import SectionHeading from "../SectionHeading";
 import Spacing from "../Spacing";
 import Link from "next/link";
 import Image from "next/image";
+import SocialIcons from "../SocialIcons";
 
 const TeamSection = ({ data, bgColor, variant, hr }) => {
   const settings = {
@@ -74,28 +69,8 @@ const TeamSection = ({ data, bgColor, variant, hr }) => {
                           <Link href={item.link}>{item.name}</Link>
                         </h3>
                         <p className="cs_team_subtitle">{item.profession}</p>
-                        <div className="cs_social_btns cs_style_1">
-                          <Link href={item.facebook} className="cs_center">
-                            <i>
-                              <FaFacebookF />
-                            </i>
-                          </Link>
-                          <Link href={item.pinterest} className="cs_center">
-                            <i>
-                              <FaPinterestP />
-                            </i>
-                          </Link>
-                          <Link href={item.twitter} className="cs_center">
-                            <i>
-                              <FaTwitter />
-                            </i>
-                          </Link>
-                          <Link href={item.instagram} className="cs_center">
-                            <i>
-                              <FaInstagram />
-                            </i>
-                          </Link>
-                        </div>
+                        <SocialIcons />
+                        <div className="cs_post_shape position-absolute" />
                       </div>
                     </div>
                   </div>

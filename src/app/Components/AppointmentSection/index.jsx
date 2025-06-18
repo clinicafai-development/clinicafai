@@ -7,6 +7,7 @@ import {
   FaTwitter,
 } from "react-icons/fa6";
 import Image from "next/image";
+import SocialIcons from "../SocialIcons";
 
 const AppointmentSection = ({ data }) => {
   return (
@@ -31,52 +32,7 @@ const AppointmentSection = ({ data }) => {
                   <Link href={doctor.profileLink}>{doctor.name}</Link>
                 </h3>
                 <p className="cs_team_subtitle">{doctor.specialty}</p>
-                <div className="cs_social_btns cs_style_1">
-                  <Link
-                    href={doctor.iconUrl}
-                    className="cs_center"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i>
-                      {" "}
-                      <FaFacebookF />
-                    </i>
-                  </Link>{" "}
-                  <Link
-                    href={doctor.iconUrl2}
-                    className="cs_center"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i>
-                      {" "}
-                      <FaPinterestP />
-                    </i>
-                  </Link>{" "}
-                  <Link
-                    href={doctor.iconUrl3}
-                    className="cs_center"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i>
-                      {" "}
-                      <FaTwitter />
-                    </i>
-                  </Link>{" "}
-                  <a
-                    href={doctor.iconUrl}
-                    className="cs_center"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i>
-                      {" "}
-                      <FaInstagram />
-                    </i>
-                  </a>
-                </div>
+                <SocialIcons />
               </div>
             </div>
           ))}

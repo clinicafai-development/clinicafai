@@ -4,6 +4,7 @@ import { FaAnglesRight } from "react-icons/fa6";
 import Slider from "react-slick";
 import Button from "../Buttons";
 import Image from "next/image";
+
 const HeroSection = ({ data }) => {
   const [nav1, setNav1] = useState(null);
   const [nav2, setNav2] = useState(null);
@@ -20,8 +21,11 @@ const HeroSection = ({ data }) => {
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
-    fade: false,
+    fade: true,
     swipeToSlide: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnHover: false
   };
 
   const settings2 = {
@@ -33,6 +37,9 @@ const HeroSection = ({ data }) => {
     swipeToSlide: true,
     vertical: true,
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnHover: false
   };
 
   return (
@@ -91,7 +98,7 @@ const HeroSection = ({ data }) => {
                         </div>
                       </div>
                       <div className="cs_hero_shape">
-                      <Image src={items.iconImgUrl} className="cs_spinner_img" alt="img" width={142} height={190}   />
+                        <Image src={items.iconImgUrl} className="cs_spinner_img" alt="img" width={142} height={190} />
                       </div>
                     </div>
                   </div>
@@ -111,7 +118,7 @@ const HeroSection = ({ data }) => {
           >
             {data?.secondarySlider?.map((items, index) => (
               <div className="cs_hero_slider_thumb_mini" key={index}>
-                <Image src={items}  alt="img" width={90} height={92}   />
+                <Image src={items} alt="img" width={90} height={92} />
               </div>
             ))}
           </Slider>

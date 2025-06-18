@@ -4,13 +4,11 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import {
   FaEnvelope,
-  FaFacebookF,
-  FaInstagram,
-  FaPinterestP,
-  FaTwitter,
+  FaLocationDot,
 } from 'react-icons/fa';
-import { FaAnglesRight, FaLocationDot } from 'react-icons/fa6';
+import { FaAnglesRight } from 'react-icons/fa6';
 import { HiMiniMagnifyingGlass } from 'react-icons/hi2';
+import SocialIcons from '../SocialIcons';
 
 const Header = ({ isTopBar, variant }) => {
   const [isShowMobileMenu, setIsShowMobileMenu] = useState(false);
@@ -102,28 +100,7 @@ const Header = ({ isTopBar, variant }) => {
                   </ul>
                 </div>
                 <div className="cs_top_header_right">
-                  <div className="cs_social_btns cs_style_1">
-                    <Link href="/" className="cs_center">
-                      <i>
-                        <FaFacebookF />
-                      </i>
-                    </Link>
-                    <Link href="/" className="cs_center">
-                      <i>
-                        <FaPinterestP />
-                      </i>
-                    </Link>
-                    <Link href="/" className="cs_center">
-                      <i>
-                        <FaTwitter />
-                      </i>
-                    </Link>
-                    <Link href="/" className="cs_center">
-                      <i>
-                        <FaInstagram />
-                      </i>
-                    </Link>
-                  </div>
+                  <SocialIcons />
                 </div>
               </div>
             </div>
