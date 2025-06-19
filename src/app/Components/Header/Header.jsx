@@ -23,7 +23,6 @@ const Header = ({ isTopBar, variant }) => {
       { label: 'Home', href: '/' },
       { label: 'Dr. Shubhra Goel', href: '/about', subItems: [
         { label: 'Credentials', href: '/about/credentials' },
-        { label: 'Mentors', href: '/about/mentors' },
         { label: 'Patient Experience', href: '/about/patient-experience' },
       ] },
       { label: 'Our Services', href: '/service', subItems: [

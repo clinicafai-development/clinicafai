@@ -1,1 +1,5 @@
-{}
+{
+  "/(home1)/page": "app/(home1)/page.js",
+  "/(innerpage)/about/credentials/page": "app/(innerpage)/about/credentials/page.js",
+  "/(innerpage)/service/our-treatment/page": "app/(innerpage)/service/our-treatment/page.js"
+}

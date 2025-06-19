@@ -220,7 +220,7 @@ export default function Credentials() {
                   <h3 className="mentor-name">{mentor.name}</h3>
                   <p className="mentor-specialty">{mentor.specialty}</p>
                   <p className="mentor-institution">{mentor.institution}</p>
-                  <blockquote className="mentor-testimonial">"{mentor.testimonial}"</blockquote>
+                  <blockquote className="mentor-testimonial">&ldquo;{mentor.testimonial}&rdquo;</blockquote>
                 </div>
               </div>
             ))}
@@ -294,13 +294,13 @@ export default function Credentials() {
               <h2 className="vision-title">Why I Started Clinica Fai</h2>
               <div className="vision-story">
                 <p>
-                  "My journey in medicine began with a simple belief: every person deserves to feel confident in their own skin. After years of training at prestigious institutions and working with renowned mentors, I realized that true beauty comes from the harmony between medical excellence and artistic vision."
+                  &ldquo;My journey in medicine began with a simple belief: every person deserves to feel confident in their own skin. After years of training at prestigious institutions and working with renowned mentors, I realized that true beauty comes from the harmony between medical excellence and artistic vision.&rdquo;
                 </p>
                 <p>
-                  "Clinica Fai was born from my desire to create a space where cutting-edge medical technology meets personalized care. Here, we don't just treat conditions – we understand dreams, address concerns, and craft solutions that enhance natural beauty while prioritizing safety above all."
+                  &ldquo;Clinica Fai was born from my desire to create a space where cutting-edge medical technology meets personalized care. Here, we don&apos;t just treat conditions &ndash; we understand dreams, address concerns, and craft solutions that enhance natural beauty while prioritizing safety above all.&rdquo;
                 </p>
                 <p>
-                  "Every procedure, every consultation, every moment of care is guided by the principle that your trust is sacred. This is why I continue to learn, to innovate, and to push the boundaries of what's possible in aesthetic medicine."
+                  &ldquo;Every procedure, every consultation, every moment of care is guided by the principle that your trust is sacred. This is why I continue to learn, to innovate, and to push the boundaries of what&apos;s possible in aesthetic medicine.&rdquo;
                 </p>
                 <div className="signature">
                   <span className="signature-text">Dr. Shubhra Goel</span>
