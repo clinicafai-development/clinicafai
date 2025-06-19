@@ -15,6 +15,8 @@ import ErrorBoundary from '../Components/ErrorBoundary';
 import BestTreatmentsSection from '../Components/BestTreatmentsSection';
 import BeforeAfterConsoleSection from '../Components/BeforeAfterConsoleSection';
 import GoogleReviewsSection from '../Components/GoogleReviewsSection';
+import UniqueClinicaFaiTreatmentSection from '../Components/UniqueClinicaFaiTreatmentSection';
+import YouTubeTestimonialsSection from '../Components/YouTubeTestimonialsSection';
 
 const heroData = {
     primarySlider: [
@@ -222,37 +224,37 @@ const heroData = {
   
   const sectionData = {
     subtitle: 'WHY CHOOSE US',
-    title: 'Medical Ready To Get This <br /> Health Solution.',
+    title: 'Your Skin First <br /> Exceptional Care.',
     services: [
       {
         iconUrl: '/assets/img/icons/service_icon_9.png',
-        title: 'Expert Care',
-        subtitle: 'Medical competitor research startup to financial',
+        title: 'Your Skin First',
+        subtitle: 'We listen intently and customize each step to address your individual concerns.',
       },
       {
         iconUrl: '/assets/img/icons/service_icon_10.png',
-        title: 'Emergency Help',
-        subtitle: 'Medical competitor research startup to financial',
+        title: 'Advanced Technology',
+        subtitle: 'Enjoy the latest equipment for quicker, safer, and more accurate care.',
       },
       {
         iconUrl: '/assets/img/icons/service_icon_11.png',
-        title: 'Qualified Doctors',
-        subtitle: 'Medical competitor research startup to financial',
+        title: 'Global Expertise',
+        subtitle: 'Under the guidance of a world-leader chief surgeon respected globally.',
       },
       {
         iconUrl: '/assets/img/icons/service_icon_12.png',
-        title: 'Medical Advices',
-        subtitle: 'Medical competitor research startup to financial',
+        title: 'Seamless Access',
+        subtitle: 'From online consults to international surgery suites — all in one place.',
       },
       {
         iconUrl: '/assets/img/icons/service_icon_13.png',
-        title: 'Medical Research',
-        subtitle: 'Medical competitor research startup to financial',
+        title: 'Tailored for You',
+        subtitle: 'Enjoy individualized treatments and pricing that feel more like home.',
       },
       {
         iconUrl: '/assets/img/icons/service_icon_14.png',
-        title: 'Affordable Prices',
-        subtitle: 'Medical competitor research startup to financial',
+        title: 'Honest Results',
+        subtitle: 'We believe in committing to outcomes that are safe, achievable, and wonderfully real.',
       },
     ],
   };
@@ -435,6 +437,10 @@ const Page = () => {
                 </Section>
                 {/* End Service Section */}
 
+                {/* Unique Clinica Fai Treatment Section */}
+                <UniqueClinicaFaiTreatmentSection />
+                {/* End Unique Clinica Fai Treatment Section */}
+
                 {/* 3D Before/After Console Slider Section */}
                 <BeforeAfterConsoleSection />
 
@@ -449,6 +455,10 @@ const Page = () => {
                     <BlogSection data={blogsData} />
                 </Section>
                 {/* End Blog Solution */}
+
+                {/* YouTube Video Testimonials Section */}
+                <YouTubeTestimonialsSection />
+                {/* End YouTube Video Testimonials Section */}
 
                 {/* Start Brand Section */}
                 <Section topSpaceLg="70" topSpaceMd="90" className="cs_brands_section">

@@ -17,9 +17,9 @@ const ContactSection2 = () => {
             <div className="col-lg-6">
             <div className="cs_section_heading cs_style_1">
               <p className="cs_section_subtitle cs_accent_color">
-                <span className="cs_shape_left"></span>CONTACT US
+                <span className="cs_shape_left"></span>BOOK AN APPOINTMENT
               </p>
-              <h2 className="cs_section_title">Make An Appointment <br/>Apply For Treatments</h2>
+              <h2 className="cs_section_title">Schedule Your Visit <br/>Book Your Treatment Today</h2>
             </div>
             <div className="cs_height_25 cs_height_lg_25"></div>
             <form className="cs_contact_form row cs_gap_y_30 home_form_area">
@@ -39,7 +39,7 @@ const ContactSection2 = () => {
                 <textarea rows="5" name="message" className="cs_form_field" placeholder="Your comments"></textarea>
               </div>
               <div className="col-lg-12">
-                <button type="submit" className="cs_btn cs_style_1 cs_color_1">Send Request</button>
+                <button type="submit" className="cs_btn cs_style_1 cs_color_1">Book Appointment</button>
               </div>
             </form>
             </div>
@@ -48,9 +48,6 @@ const ContactSection2 = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="cs_solution_shape position-absolute">
-        <Image src="/assets/img/stethoscope.png" alt="img" width={304} height={399}   />
         </div>
         <div className="cs_height_120 cs_height_lg_80"></div>
       </section>
