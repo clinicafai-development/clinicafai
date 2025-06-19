@@ -57,6 +57,7 @@ const HeroSection = ({ data }) => {
                   className="cs_hero cs_style_1 cs_center cs_bg_filed"
                   style={{
                     backgroundImage: `url(${items.bgImageUrl})`,
+                    backgroundPosition: items.bgPosition || 'center',
                   }}
                 >
                   <div className="container">

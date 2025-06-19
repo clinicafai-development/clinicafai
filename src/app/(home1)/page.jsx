@@ -4,7 +4,6 @@ import Section from '../Components/Section';
 import About from '../Components/About';
 import CounterSection from '../Components/FunSection/CounterSection';
 import Service from '../Components/Service';
-import TeamSection from '../Components/TeamSection';
 import BrandsSlider from '../Components/BrandsSection';
 import ChooseUs from '../Components/ChooseUs';
 import ProjectSection from '../Components/ProjectSection';
@@ -13,7 +12,6 @@ import MedicalTabSection from '../Components/MedicalTabSection';
 import ContactSection2 from '../Components/ContactSection/ContactSection2';
 import BlogSection from '../Components/BlogsSection';
 import ErrorBoundary from '../Components/ErrorBoundary';
-import BestProductsSection from '../Components/BestProductsSection';
 import BestTreatmentsSection from '../Components/BestTreatmentsSection';
 import BeforeAfterConsoleSection from '../Components/BeforeAfterConsoleSection';
 
@@ -33,7 +31,8 @@ const heroData = {
         iconImgUrl: '/assets/img/icons/hero_icon.png',
       },
       {
-        bgImageUrl: '/assets/img/hero_slider_2.jpg',
+        bgImageUrl: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/shadiready//Shaadi-Image-MOBILE-min.png',
+        bgPosition: 'top center',
         title: 'Your Center for <br>Mental <span>Health.</span>',
         contactSubtitle:
           'Medical ers piciatis unde omnis iste natus this the word medical this mountains, far from the countries Vokalia and, live the docor white teeth sitting on a dental for best medical.',
@@ -195,63 +194,6 @@ const heroData = {
       "Delivering tomorrow's health care for your family.<br>medical this View",
     footerLink: '/',
     footerLinkText: 'SEE MORE',
-  };
-  
-  const teamData = {
-    subtitle: 'OUR TEAM MEMBER',
-    title: 'Meet Our Specialist This <br />Doctor Meeting',
-    sliderData: [
-      {
-        name: 'Dr. Norma Pedric',
-        profession: 'Neurologist',
-        imageUrl: '/assets/img/team_1.jpg',
-        link: '/doctors/doctor-details',
-        facebook: '/',
-        pinterest: '/',
-        twitter: '/',
-        instagram: '/',
-      },
-      {
-        name: 'Dr. James Lewis',
-        profession: 'Neurologist',
-        imageUrl: '/assets/img/team_3.jpg',
-        link: '/doctors/doctor-details',
-        facebook: '/',
-        pinterest: '/',
-        twitter: '/',
-        instagram: '/',
-      },
-      {
-        name: 'Dr. Sophia Anderson',
-        profession: 'Neurologist',
-        imageUrl: '/assets/img/team_8.jpg',
-        link: '/doctors/doctor-details',
-        facebook: '/',
-        pinterest: '/',
-        twitter: '/',
-        instagram: '/',
-      },
-      {
-        name: 'Dr. Michael Thompson',
-        profession: 'Neurologist',
-        imageUrl: '/assets/img/team_5.jpg',
-        link: '/doctors/doctor-details',
-        facebook: '/',
-        pinterest: '/',
-        twitter: '/',
-        instagram: '/',
-      },
-      {
-        name: 'Dr. David Wilson',
-        profession: 'Neurologist',
-        imageUrl: '/assets/img/team_6.jpg',
-        link: '/doctors/doctor-details',
-        facebook: '/',
-        pinterest: '/',
-        twitter: '/',
-        instagram: '/',
-      },
-    ],
   };
   
   const brandData = [
@@ -478,22 +420,6 @@ const Page = () => {
                 </Section>
                 {/* End Service Section */}
 
-                {/* Our Best Products Section */}
-                <BestProductsSection />
-
-                {/* Our Team Members Section */}
-                <Section
-                    topSpaceLg="70"
-                    topSpaceMd="110"
-                    className={'cs_team_section position-relative'}
-                >
-                    <TeamSection
-                        hr={true}
-                        variant={'cs_pagination cs_style_2'}
-                        data={teamData}
-                    />
-                </Section>
-
                 {/* 3D Before/After Console Slider Section */}
                 <BeforeAfterConsoleSection />
 
@@ -513,7 +439,6 @@ const Page = () => {
                 <Section topSpaceLg="70" topSpaceMd="90" className="cs_brands_section">
                     <BrandsSlider data={brandData} />
                 </Section>
-
                 {/* End Brand Section */}
 
                 {/* Start Why Choose Us Section */}
