@@ -33,7 +33,7 @@ const heroData = {
       {
         bgImageUrl: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/heroslider//NEW-doc-image.png',
         bgPosition: 'top center',
-        title: 'Expert Care for <br>Your <span>Health</span>',
+        title: 'The expert behind your skin\'s glow',
         contactSubtitle:
           'Experience world-class medical care with our team of dedicated professionals, ensuring your well-being is our top priority.',
         contactTitle: 'Schedule Your Visit',
@@ -46,7 +46,7 @@ const heroData = {
       },
       {
         bgImageUrl: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/heroslider//Plxer-image-min.png',
-        title: 'Advanced Technology <br>for Better <span>Care</span>',
+        title: 'Let\'s Get Shaadi Ready!',
         contactSubtitle:
           'Utilizing cutting-edge medical technology to provide the most effective and comfortable treatments for our patients.',
         contactTitle: 'Discover Our Services',
@@ -59,7 +59,7 @@ const heroData = {
       },
       {
         bgImageUrl: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/heroslider//Shaadi-Image-MOBILE-min.png',
-        title: 'Your Journey to <br>Better <span>Health</span>',
+        title: 'Plexr Plasma Perfection',
         contactSubtitle:
           'Join us on your path to wellness with personalized care and comprehensive medical solutions tailored to your needs.',
         contactTitle: 'Start Your Journey',
@@ -72,9 +72,10 @@ const heroData = {
       }
     ],
     secondarySlider: [
-      'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/heroslider/hero_slider_sm_1.png',
-      'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/heroslider/hero_slider_sm_2.png',
-      'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/heroslider/hero_slider_sm_3.png',
+      'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/heroslider//golden-hour-beauty-stockcake.jpg',
+      'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/heroslider//NEW-doc-image.png',
+      'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/heroslider//Plxer-image-min.png',
+      'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/heroslider//Shaadi-Image-MOBILE-min.png',
     ],
   };
 
@@ -134,7 +135,7 @@ const heroData = {
   
   const serviceData = {
     subtitle: 'OUR BEST SERVICE',
-    title: 'Explore All Our Treatments',
+    title: 'Explore All Our Services',
     description: "We are privileged to treat thousands of patients who place their trust in us and their skin—each patient looking for confidence, clarity, and quality care. From cutting-edge dermatological therapies to personalized aesthetic treatments, we marry scientific precision to a keen sense of beauty. Our clinic is a reliable haven where science and elegance converge, and where your skin is always in the hands of experts.",
     services: [
       {

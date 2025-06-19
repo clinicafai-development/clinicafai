@@ -29,7 +29,6 @@ const Header = ({ isTopBar, variant }) => {
       { label: 'Our Services', href: '/service', subItems: [
         { label: 'Our Treatment', href: '/service/our-treatment' },
         { label: 'Plexer Pro', href: '/service/plexer-pro' },
-        { label: 'Our Products', href: '/service/our-products' },
       ] },
       { label: 'Knowledge Center', href: '/blog', subItems: [
         { label: 'About Us', href: '/blog/about-us' },
