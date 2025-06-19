@@ -3,28 +3,28 @@ import React, { useState, useEffect } from "react";
 
 const pairs = [
   {
-    before: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&w=480&q=80",
-    after: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=facearea&w=480&q=80",
+    before: "https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/beforeandafter//acne%20before.png",
+    after: "https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/beforeandafter//acne%20after.png",
   },
   {
-    before: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=facearea&w=480&q=80",
-    after: "https://images.unsplash.com/photo-1511174511562-5f97f4f4e0c8?auto=format&fit=facearea&w=480&q=80",
+    before: "https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/beforeandafter//cheek%20hollowess%20before.png",
+    after: "https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/beforeandafter//cheek%20hollowness%20after.png",
   },
   {
-    before: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=facearea&w=480&q=80",
-    after: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=facearea&w=480&q=80",
+    before: "https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/beforeandafter//eye%20bag%20before%20.png",
+    after: "https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/beforeandafter//eye%20bag%20after.png",
   },
   {
-    before: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=480&q=80",
-    after: "https://images.unsplash.com/photo-1519985176271-adb1088fa94c?auto=format&fit=facearea&w=480&q=80",
+    before: "https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/beforeandafter//injured_face.png",
+    after: "https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/beforeandafter//recovered_face.png",
   },
   {
-    before: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=480&q=80",
-    after: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=facearea&w=480&q=80",
+    before: "https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/beforeandafter//ptosis%20before.png",
+    after: "https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/beforeandafter//ptosis%20after.png",
   },
   {
-    before: "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=facearea&w=480&q=80",
-    after: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&w=480&q=80",
+    before: "https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/beforeandafter//thyroid%20eye%20disease%20before.png",
+    after: "https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/beforeandafter//thyroid%20eye%20disease%20after.png",
   },
 ];
 
