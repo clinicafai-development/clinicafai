@@ -25,16 +25,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(innerpage)/layout.js"
-    ],
-    "/(innerpage)/about/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(innerpage)/about/page.js"
-    ],
-    "/(innerpage)/service/our-treatment/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(innerpage)/service/our-treatment/page.js"
     ]
   }
 }

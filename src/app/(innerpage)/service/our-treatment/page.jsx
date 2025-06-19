@@ -365,8 +365,8 @@ export default function OurTreatment() {
                   <p>{faq.answer}</p>
                 </div>
               </div>
-            ))}
-          </div>
+        ))}
+      </div>
         </div>
       </section>
 
@@ -383,7 +383,7 @@ export default function OurTreatment() {
               <button className="cta-secondary">Call Now</button>
             </div>
           </div>
-        </div>
+      </div>
       </section>
 
       <style jsx>{`

@@ -1,28 +1,42 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 const ScrollUpButton = () => {
   // State to manage scroll-up button visibility
   const [showScrollButton, setShowScrollButton] = useState(false);
 
-  // Effect to handle scroll event
-  useEffect(() => {
+  // Throttled scroll handler for better performance
+  const throttledHandleScroll = useCallback(() => {
+    let ticking = false;
+    
     const handleScroll = () => {
-      console.log("Scroll position:", window.scrollY); // Debugging line
       if (window.scrollY > 350) {
         setShowScrollButton(true);
       } else {
         setShowScrollButton(false);
       }
+      ticking = false;
     };
 
+    return () => {
+      if (!ticking) {
+        requestAnimationFrame(handleScroll);
+        ticking = true;
+      }
+    };
+  }, []);
+
+  // Effect to handle scroll event
+  useEffect(() => {
+    const scrollHandler = throttledHandleScroll();
+
     // Attach scroll event listener
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", scrollHandler, { passive: true });
 
     // Clean up: remove scroll event listener
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", scrollHandler);
     };
-  }, []); // Empty dependency array ensures effect runs only once on mount
+  }, [throttledHandleScroll]); // Include throttledHandleScroll in dependency array
 
   // Scroll to top function
   const scrollToTop = () => {
@@ -36,9 +50,7 @@ const ScrollUpButton = () => {
     <>
       {showScrollButton && (
         <span
-          className={`cs_scrollup "${
-            showScrollButton ? "cs_scrollup_show" : ""
-          }`}
+          className={`cs_scrollup ${showScrollButton ? "cs_scrollup_show" : ""}`}
           onClick={scrollToTop}
         >
           <svg

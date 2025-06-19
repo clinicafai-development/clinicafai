@@ -1,13 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Enable network access from other devices
-  experimental: {
-    // This allows the dev server to be accessible from other devices on the network
-  },
-  // Configure the server to listen on all network interfaces
-  async rewrites() {
-    return [];
-  },
   // Configure external image domains
   images: {
     remotePatterns: [
@@ -17,8 +9,20 @@ const nextConfig = {
         port: '',
         pathname: '/storage/v1/object/public/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'img.youtube.com',
+        port: '',
+        pathname: '/vi/**',
+      },
     ],
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
+  // Enable compression
+  compress: true,
+  // Optimize for production
+  swcMinify: true,
 };
 
 export default nextConfig;
