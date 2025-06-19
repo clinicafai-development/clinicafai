@@ -18,7 +18,7 @@ import BeforeAfterConsoleSection from '../Components/BeforeAfterConsoleSection';
 const heroData = {
     primarySlider: [
       {
-        bgImageUrl: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/landingpagepicture1//golden-hour-beauty-stockcake.jpg',
+        bgImageUrl: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/heroslider//golden-hour-beauty-stockcake.jpg',
         title: 'Time to Choose <span>You</span>',
         contactSubtitle:
           "We're here to remind you that choosing yourself is strength. Feel empowered, nurtured, and fully yourself.",
@@ -31,37 +31,50 @@ const heroData = {
         iconImgUrl: '/assets/img/icons/hero_icon.png',
       },
       {
-        bgImageUrl: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/shadiready//Shaadi-Image-MOBILE-min.png',
+        bgImageUrl: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/heroslider//NEW-doc-image.png',
         bgPosition: 'top center',
-        title: 'Your Center for <br>Mental <span>Health.</span>',
+        title: 'Expert Care for <br>Your <span>Health</span>',
         contactSubtitle:
-          'Medical ers piciatis unde omnis iste natus this the word medical this mountains, far from the countries Vokalia and, live the docor white teeth sitting on a dental for best medical.',
-        contactTitle: 'Receive Medical Service.',
+          'Experience world-class medical care with our team of dedicated professionals, ensuring your well-being is our top priority.',
+        contactTitle: 'Schedule Your Visit',
         contact: 'Call Us at: (+2) 56 54 1453',
-        btnText1: 'Contact Now',
+        btnText1: 'Book Now',
         link: '/contact',
-        btnText2: 'Discover More',
+        btnText2: 'Learn More',
         link2: '/about',
         iconImgUrl: '/assets/img/icons/hero_icon.png',
       },
       {
-        bgImageUrl: '/assets/img/hero_slider_1.jpg',
-        title: 'We Hospital Doctors Patients <span>Service.</span>',
+        bgImageUrl: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/heroslider//Plxer-image-min.png',
+        title: 'Advanced Technology <br>for Better <span>Care</span>',
         contactSubtitle:
-          'Medical ers piciatis unde omnis iste natus this the word medical this mountains, far from the countries Vokalia and, live the docor white teeth sitting on a dental for best medical.',
-        contactTitle: 'Receive Medical Service.',
+          'Utilizing cutting-edge medical technology to provide the most effective and comfortable treatments for our patients.',
+        contactTitle: 'Discover Our Services',
         contact: 'Call Us at: (+2) 56 54 1453',
-        btnText1: 'Contact Now',
+        btnText1: 'Get Started',
         link: '/contact',
-        btnText2: 'Discover More',
+        btnText2: 'Our Services',
         link2: '/about',
         iconImgUrl: '/assets/img/icons/hero_icon.png',
       },
+      {
+        bgImageUrl: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/heroslider//Shaadi-Image-MOBILE-min.png',
+        title: 'Your Journey to <br>Better <span>Health</span>',
+        contactSubtitle:
+          'Join us on your path to wellness with personalized care and comprehensive medical solutions tailored to your needs.',
+        contactTitle: 'Start Your Journey',
+        contact: 'Call Us at: (+2) 56 54 1453',
+        btnText1: 'Contact Now',
+        link: '/contact',
+        btnText2: 'About Us',
+        link2: '/about',
+        iconImgUrl: '/assets/img/icons/hero_icon.png',
+      }
     ],
     secondarySlider: [
-      '/assets/img/hero_slider_sm_1.png',
-      '/assets/img/hero_slider_sm_2.png',
-      '/assets/img/hero_slider_sm_3.png',
+      'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/heroslider/hero_slider_sm_1.png',
+      'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/heroslider/hero_slider_sm_2.png',
+      'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/heroslider/hero_slider_sm_3.png',
     ],
   };
 
