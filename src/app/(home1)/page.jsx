@@ -14,6 +14,7 @@ import BlogSection from '../Components/BlogsSection';
 import ErrorBoundary from '../Components/ErrorBoundary';
 import BestTreatmentsSection from '../Components/BestTreatmentsSection';
 import BeforeAfterConsoleSection from '../Components/BeforeAfterConsoleSection';
+import GoogleReviewsSection from '../Components/GoogleReviewsSection';
 
 const heroData = {
     primarySlider: [
@@ -492,6 +493,10 @@ const Page = () => {
                     <MedicalTabSection data={medicalTabsData} />
                 </Section>
                 {/* End Medical Tab Section */}
+
+                {/* Google Reviews Section */}
+                <GoogleReviewsSection />
+                {/* End Google Reviews Section */}
             </div>
         </ErrorBoundary>
     );

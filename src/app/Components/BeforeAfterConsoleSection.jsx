@@ -70,7 +70,7 @@ export default function BeforeAfterConsoleSection() {
                 <img src={pair.after} alt="After" />
                 <span className="label after-label">After</span>
               </div>
-              <div className="divider" />
+              <div className={`divider ${hovered[key] ? hovered[key] + '-active' : ''}`} />
             </div>
           );
         })}
@@ -94,7 +94,8 @@ export default function BeforeAfterConsoleSection() {
           width: 50%;
           height: 100%;
           overflow: hidden;
-          transition: width 0.4s cubic-bezier(.4,2,.6,1);
+          transition: all 0.4s cubic-bezier(.4,2,.6,1);
+          cursor: pointer;
         }
         .before {
           left: 0;
@@ -102,19 +103,31 @@ export default function BeforeAfterConsoleSection() {
         }
         .after {
           left: 50%;
-          z-index: 1;
+          z-index: 2;
         }
         .before.expanded {
           width: 70%;
+          z-index: 3;
         }
         .after.expanded {
           width: 70%;
           left: 30%;
+          z-index: 3;
+        }
+        .before:hover {
+          z-index: 3;
+        }
+        .after:hover {
+          z-index: 3;
         }
         .before img, .after img {
           width: 100%;
           height: 100%;
           object-fit: cover;
+          transition: transform 0.3s ease;
+        }
+        .before:hover img, .after:hover img {
+          transform: scale(1.05);
         }
         .divider {
           position: absolute;
@@ -123,7 +136,14 @@ export default function BeforeAfterConsoleSection() {
           width: 2px;
           height: 100%;
           background: #00bcd4;
-          z-index: 3;
+          z-index: 4;
+          transition: left 0.4s cubic-bezier(.4,2,.6,1);
+        }
+        .divider.before-active {
+          left: 70%;
+        }
+        .divider.after-active {
+          left: 30%;
         }
         .label {
           position: absolute;
@@ -133,13 +153,20 @@ export default function BeforeAfterConsoleSection() {
           background: #00bcd4;
           padding: 4px 16px;
           border-radius: 12px;
-          z-index: 4;
+          z-index: 5;
+          transition: all 0.3s ease;
         }
         .before-label {
           left: 20%;
         }
         .after-label {
           right: 20%;
+        }
+        .before.expanded .before-label {
+          left: 35%;
+        }
+        .after.expanded .after-label {
+          right: 35%;
         }
       `}</style>
     </section>
