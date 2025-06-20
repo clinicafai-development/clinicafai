@@ -26,7 +26,7 @@ const faqs = [
   }
 ];
 
-const FAQPage = () => {
+const OurFAQPage = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleFAQ = (index) => {
@@ -197,4 +197,4 @@ const FAQPage = () => {
   );
 };
 
-export default FAQPage; 
+export default OurFAQPage; 

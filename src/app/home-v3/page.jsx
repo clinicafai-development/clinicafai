@@ -507,7 +507,7 @@ const heroData = {
   };
 
 
-const home3 = () => {
+const HomeV3Page = () => {
     return (
         <div>
      {/* Start Hero Section */}
@@ -642,4 +642,4 @@ const home3 = () => {
     );
 };
 
-export default home3;
+export default HomeV3Page;

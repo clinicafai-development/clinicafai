@@ -449,7 +449,7 @@ const HeroData = {
     ],
   };
 
-const home2 = () => {
+const HomeV2Page = () => {
     return (
         <div>
             
@@ -586,4 +586,4 @@ const home2 = () => {
     );
 };
 
-export default home2;
+export default HomeV2Page;

@@ -3,7 +3,7 @@ import Section from '@/app/Components/Section';
 import SectionHeading from '@/app/Components/SectionHeading';
 import React from 'react';
 
-const page = () => {
+const AppointmentsPage = () => {
 
     const headingData = {
         title: "Appointments",
@@ -107,4 +107,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default AppointmentsPage;

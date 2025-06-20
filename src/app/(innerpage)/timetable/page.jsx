@@ -171,7 +171,7 @@ const headingData = {
   };
 
 
-const page = () => {
+const OurTimetablePage = () => {
     return (
         <div>
 
@@ -195,4 +195,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default OurTimetablePage;

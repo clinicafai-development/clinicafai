@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-export default function OurTreatment() {
+export default function OurTreatmentPage() {
   const [activeFilter, setActiveFilter] = useState('all');
   const [isVisible, setIsVisible] = useState({});
   const [currentSlide, setCurrentSlide] = useState(0);

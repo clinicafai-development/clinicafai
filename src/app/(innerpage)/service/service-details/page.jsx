@@ -77,7 +77,7 @@ const headingData = {
     },
   ];
 
-const page = () => {
+const ServiceDetailsPage = () => {
     return (
         <div>
        <Section
@@ -109,4 +109,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default ServiceDetailsPage;

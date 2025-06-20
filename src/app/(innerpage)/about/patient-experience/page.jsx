@@ -6,7 +6,7 @@ const stories = [
   { name: 'Priya D.', testimonial: 'Professional, kind, and truly skilled.', img: 'https://randomuser.me/api/portraits/women/55.jpg' },
 ];
 
-export default function PatientExperience() {
+export default function OurPatientExperience() {
   return (
     <div style={{minHeight: '80vh', background: 'linear-gradient(135deg, #f3e7fa 0%, #e0f7fa 100%)', padding: '60px 0'}}>
       <h1 style={{textAlign: 'center', fontWeight: 700, fontSize: 36, marginBottom: 40}}>Patient Experience</h1>

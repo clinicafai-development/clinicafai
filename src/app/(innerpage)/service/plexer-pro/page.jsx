@@ -1,7 +1,7 @@
 ﻿"use client"
 import React from "react";
 
-export default function PlexerPro() {
+export default function PlexerProPage() {
   return (
     <div style={{ background: "#1A1A1A", color: "#FCF7F0", minHeight: "100vh", padding: "120px 0" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 20px", textAlign: "center" }}>

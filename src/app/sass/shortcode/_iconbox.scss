@@ -109,8 +109,8 @@
       position: absolute;
       top: 0;
       left: 0;
-      background-color: var(--blue-color);
-      filter: drop-shadow(0px 0px 49px rgba(49, 82, 157, 0.14));
+      background-color: var(--accent-color);
+      filter: drop-shadow(0px 0px 49px rgba(212, 175, 127, 0.25));
       border-radius: 50%;
       z-index: 1;
       transition: all 0.4s ease;
@@ -124,7 +124,7 @@
       top: 50%;
       right: -4px;
       transform: translateY(-50%) rotate(45deg);
-      background-color: var(--accent-color);
+      background-color: var(--deep-black);
       z-index: 0;
       transition: all 0.4s ease;
     }
@@ -160,7 +160,7 @@
     }
 
     .cs_iconbox_icon::before {
-      background-color: var(--accent-color);
+      background-color: var(--secondary-accent);
     }
 
     .cs_iconbox_icon::after {

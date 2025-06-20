@@ -143,7 +143,7 @@ const heroData = {
     services: [
       {
         backgroundImage: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/ourservices//Acne.jpg',
-        iconUrl: '/assets/img/icons/service_icon_1.png',
+        iconUrl: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/icon//acne.png',
         index: '01',
         title: 'Acne',
         subtitle: 'Medical competitor research startup to financial',
@@ -151,7 +151,7 @@ const heroData = {
       },
       {
         backgroundImage: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/ourservices//dark%20circle.png',
-        iconUrl: '/assets/img/icons/service_icon_2.png',
+        iconUrl: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/icon//dark%20circle.png',
         index: '02',
         title: 'Dark Circles',
         subtitle: 'Medical competitor research startup to financial',
@@ -159,7 +159,7 @@ const heroData = {
       },
       {
         backgroundImage: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/ourservices//skin%20hydration.jpg',
-        iconUrl: '/assets/img/icons/service_icon_3.png',
+        iconUrl: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/icon//skin%20hydration.png',
         index: '03',
         title: 'Skin Hydration',
         subtitle: 'Medical competitor research startup to financial',
@@ -167,7 +167,7 @@ const heroData = {
       },
       {
         backgroundImage: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/ourservices//chemical%20peel.png',
-        iconUrl: '/assets/img/icons/service_icon_4.png',
+        iconUrl: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/icon//chemical%20peel%20(2).png',
         index: '04',
         title: 'Chemical Peels',
         subtitle: 'Medical competitor research startup to financial',
@@ -175,7 +175,7 @@ const heroData = {
       },
       {
         backgroundImage: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/ourservices//daily%20skin%20care.png',
-        iconUrl: '/assets/img/icons/service_icon_5.png',
+        iconUrl: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/icon//skin%20care.png',
         index: '05',
         title: 'Daily Skin Care Program',
         subtitle: 'Medical competitor research startup to financial',
@@ -183,7 +183,7 @@ const heroData = {
       },
       {
         backgroundImage: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/ourservices//Cellulite.jpg',
-        iconUrl: '/assets/img/icons/service_icon_6.png',
+        iconUrl: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/icon//anti%20cellulite.png',
         index: '06',
         title: 'Anti-Cellulite Treatment',
         subtitle: 'Medical competitor research startup to financial',
@@ -191,7 +191,7 @@ const heroData = {
       },
       {
         backgroundImage: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/ourservices//pigmentation.png',
-        iconUrl: '/assets/img/icons/service_icon_7.png',
+        iconUrl: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/icon//pigmentation%20repair.png',
         index: '07',
         title: 'Pigmentation And Texture Repair',
         subtitle: 'Medical competitor research startup to financial',
@@ -199,7 +199,7 @@ const heroData = {
       },
       {
         backgroundImage: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/ourservices//cheek%20hollowness.png',
-        iconUrl: '/assets/img/icons/service_icon_8.png',
+        iconUrl: 'https://jnksxvamrbsxfahkbxgi.supabase.co/storage/v1/object/public/icon//cheek%20hollow.png',
         index: '08',
         title: 'Cheek Hollowness and Smile Folds',
         subtitle: 'Medical competitor research startup to financial',
@@ -396,7 +396,7 @@ const heroData = {
     postsData: [],
   };
 
-const Page = () => {
+const HomePage = () => {
     return (
         <ErrorBoundary>
             <div>
@@ -512,4 +512,4 @@ const Page = () => {
     );
 };
 
-export default Page;
+export default HomePage;

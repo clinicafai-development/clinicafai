@@ -136,7 +136,7 @@ const headingData = {
     brandImage: '/assets/img/medical_brand.png',
   };
 
-const page = () => {
+const AboutPage = () => {
     return (
         <div className='about-page-area'>
         <Section
@@ -203,4 +203,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default AboutPage;

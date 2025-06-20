@@ -123,7 +123,7 @@ const headingData = {
   };
 
 
-const page = () => {
+const BlogDetailsPage = () => {
     return (
         <div>
        <Section
@@ -155,4 +155,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default BlogDetailsPage;

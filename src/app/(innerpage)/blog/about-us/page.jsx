@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AboutUs() {
+export default function OurAboutUs() {
   return (
     <div style={{minHeight: '80vh', display: 'flex', alignItems: 'stretch', background: 'linear-gradient(120deg, #e0f7fa 0%, #f8fafc 100%)'}}>
       <div style={{flex: 1, background: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>

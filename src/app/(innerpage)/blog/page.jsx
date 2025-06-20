@@ -90,7 +90,7 @@ const headingData = {
     ],
   };
 
-const page = () => {
+const OurBlogPage = () => {
     return (
         <div>
             
@@ -117,4 +117,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default OurBlogPage;
