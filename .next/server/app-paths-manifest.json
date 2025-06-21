@@ -1,5 +1,8 @@
 {
-  "/home-v2/page": "app/home-v2/page.js",
   "/(home1)/page": "app/(home1)/page.js",
-  "/home-v3/page": "app/home-v3/page.js"
+  "/(innerpage)/contact/page": "app/(innerpage)/contact/page.js",
+  "/(innerpage)/service/page": "app/(innerpage)/service/page.js",
+  "/(innerpage)/about/page": "app/(innerpage)/about/page.js",
+  "/(innerpage)/about/credentials/page": "app/(innerpage)/about/credentials/page.js",
+  "/(innerpage)/blog/page": "app/(innerpage)/blog/page.js"
 }

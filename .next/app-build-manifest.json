@@ -1,5 +1,52 @@
 {
   "pages": {
+    "/(innerpage)/blog/about-us/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(innerpage)/blog/about-us/page.js"
+    ],
+    "/(innerpage)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(innerpage)/layout.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/(innerpage)/blog/faq/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(innerpage)/blog/faq/page.js"
+    ],
+    "/(innerpage)/service/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(innerpage)/service/page.js"
+    ],
+    "/(innerpage)/service/our-treatment/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(innerpage)/service/our-treatment/page.js"
+    ],
+    "/(innerpage)/service/plexer-pro/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(innerpage)/service/plexer-pro/page.css",
+      "static/chunks/app/(innerpage)/service/plexer-pro/page.js"
+    ],
+    "/(innerpage)/about/credentials/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(innerpage)/about/credentials/page.js"
+    ],
+    "/(innerpage)/about/patient-experience/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(innerpage)/about/patient-experience/page.js"
+    ],
     "/(home1)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -10,32 +57,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(home1)/layout.js"
     ],
-    "/layout": [
+    "/(innerpage)/contact/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/chunks/app/(innerpage)/contact/page.js"
     ],
-    "/home-v2/page": [
+    "/(innerpage)/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/home-v2/page.css",
-      "static/chunks/app/home-v2/page.js"
+      "static/chunks/app/(innerpage)/about/page.js"
     ],
-    "/home-v2/layout": [
+    "/(innerpage)/blog/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/home-v2/layout.js"
-    ],
-    "/home-v3/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/home-v3/page.js"
-    ],
-    "/home-v3/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/home-v3/layout.js"
+      "static/chunks/app/(innerpage)/blog/page.js"
     ]
   }
 }

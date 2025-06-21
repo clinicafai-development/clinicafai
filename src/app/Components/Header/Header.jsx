@@ -5,13 +5,13 @@ import { useEffect, useState } from 'react';
 import { FaEnvelope } from 'react-icons/fa';
 import { FaLocationDot } from 'react-icons/fa6';
 import { FaAnglesRight } from 'react-icons/fa6';
-import { HiMiniMagnifyingGlass } from 'react-icons/hi2';
+
 import SocialIcons from '../SocialIcons';
 
 const Header = ({ isTopBar, variant }) => {
   const [isShowMobileMenu, setIsShowMobileMenu] = useState(false);
   const [openMobileSubmenuIndex, setOpenMobileSubmenuIndex] = useState([]);
-  const [isSearchActive, setIsSearchActive] = useState(false);
+
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [isSticky, setIsSticky] = useState();
   const menu = {
@@ -36,7 +36,7 @@ const Header = ({ isTopBar, variant }) => {
       { label: 'Contact Us', href: '/contact' },
     ],
     btnUrl: '/contact',
-    btnText: 'Contact Now',
+    btnText: 'Book an Appointment',
   };
 
   const handleOpenMobileSubmenu = index => {
@@ -174,35 +174,7 @@ const Header = ({ isTopBar, variant }) => {
                     <span></span>
                   </span>
                 </div>
-                <div className="cs_search_wrap">
-                  <div
-                    className="cs_search_toggle cs_center"
-                    onClick={() => setIsSearchActive(!isSearchActive)}
-                  >
-                    <i>
-                      <HiMiniMagnifyingGlass />
-                    </i>
-                  </div>
-                  <form
-                    action="#"
-                    className={`cs_header_search_form ${
-                      isSearchActive ? 'active' : ''
-                    }`}
-                  >
-                    <div className="cs_header_search_form_in">
-                      <input
-                        type="text"
-                        placeholder="Search"
-                        className="cs_header_search_field"
-                      />
-                      <button className="cs_header_submit_btn">
-                        <i>
-                          <HiMiniMagnifyingGlass />
-                        </i>
-                      </button>
-                    </div>
-                  </form>
-                </div>
+
                 <Link href={menu.btnUrl} className="cs_btn cs_style_1 cs_color_1">
                   <span>{menu.btnText}</span>
                   <i>
